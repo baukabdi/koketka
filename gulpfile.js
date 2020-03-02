@@ -15,28 +15,33 @@ const gulp = require('gulp'),
 gulp.task('serve', function () {
 
 	browserSync({
-		//proxy: 'photographer_wp',
+		//proxy: 'koketka',
 		server: {
 			baseDir: 'app',
-		},
-		notify: false,
+			},		
+		notify: true,
 		open: true,
 		tunnel: false,
 	});
 
-	gulp.watch("app/sass/*.sass", gulp.series('sass'));
-	gulp.watch("app/sass/libs.sass", gulp.series('css-libs'));
-	gulp.watch(['app/*.html', 'app/**/*.php', 'app/js/*.js',], gulp.series('codeReload'));
+	var pagePath = ['app/*.html', 'app/**/*.php', 'app/assets/js/*.js',]
 
+	gulp.watch("app/assets/sass/*.sass", gulp.series('sass'));
+	gulp.watch("app/assets/sass/libs.sass", gulp.series('css-libs'));
+	gulp.watch(pagePath, gulp.series('codeReload'));
+});
+
+gulp.task('watch', function () {
+    gulp.watch('../css/**/*.less', gulp.series('less'))
 });
 /******** /Static Server + watching scss/html files ********/
 
 /******** Code livereload ********/
 gulp.task('codeReload', function() {
 		return gulp.src([
-			'app/**/*.html',
-			'app/**/*.php',
-			'app/js/*.js',
+			'app/assets/**/*.html',
+			'app/assets/**/*.php',
+			'app/assets/js/*.js',
 			])
 		.pipe(browserSync.reload({ stream: true }))
 });
@@ -44,44 +49,45 @@ gulp.task('codeReload', function() {
 
 
 /******** JS mix ********/
+var scriptsPath = [
+		'app/assets/js/jquery.min.js',
+		'app/assets/js/slick.min.js',
+		'app/assets/js/lc_lightbox.lite.min.js',
+		'app/assets/js/jquery.inputmask.min.js',
+		'app/assets/js/script.js',
+];
+
 gulp.task('scripts', () => {
-	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/slick-carousel/slick/slick.js',
-		'app/libs/lc-lightbox-lite/js/lc_lightbox.lite.min.js',
-		'app/libs/inputmask/dist/jquery.inputmask.min.js',
-	])
+	return gulp.src(scriptsPath)
 
 		.pipe(concat('libs.min.js'))
 		.pipe(terser())
-		.pipe(gulp.dest('app/js'));
+		.pipe(gulp.dest('app/assets/js'));
 })
 /******** /JS mix ********/
 
 /******** CSS mix ********/
 gulp.task('css-libs', function () {
-	return gulp.src('app/css/libs.css')
+	return gulp.src('app/assets/css/libs.css')
 
 		.pipe(cssnano())
 		.pipe(stripCssComments())
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest('app/css'));
+		.pipe(gulp.dest('app/assets/css'));
 })
 /******** /CSS mix ********/
 
-
 /******** Sass ********/
 gulp.task('sass', function () {
-	return gulp.src("app/sass/*.sass")
+	return gulp.src("app/assets/sass/*.sass")
 		.pipe(sass({
 			outputStyle: "expanded",
 		}))
-		.pipe(gulp.dest("app/css"))
+		.pipe(gulp.dest("app/assets/css"))
 		.pipe(autoprefixer({ browsers: ['last 15 versions', '> 1%', 'ie 8', 'ie 7'], cascade: true }))
 		.pipe(browserSync.stream());
 });
 /******** /Sass ********/
-
 
 /******** Clean dist folder ********/
 gulp.task('clean', function (cleaning) {
@@ -90,42 +96,41 @@ gulp.task('clean', function (cleaning) {
 })
 /******** /Clean dist folder ********/
 
-
 /******** Imagemin - compress images ********/
 gulp.task('img', function () {
-	return gulp.src('app/images/**/*')
+	return gulp.src('app/assets/images/**/*')
 		.pipe(imagemin({
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{ removeViewBox: false }],
 			use: [pngquant()]
 		}))
-		.pipe(gulp.dest('dist/images'));
+		.pipe(gulp.dest('dist/assets/images'));
 })
 /******** /Imagemin - compress images ********/
 
 /******** Build ********/
 gulp.task('build', done => {
 	var buildCss = gulp.src([
-		'app/css/main.css',
-		'app/css/libs.min.css',
+		'app/assets/css/main.css',
+		'app/assets/css/libs.min.css',
 	])
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('dist/assets/css'));
 
-	var cssFonts = gulp.src('app/css/fonts/**/*')
-			.pipe(gulp.dest('dist/css/fonts'));
+	var cssFonts = gulp.src('app/assets/css/fonts/**/*')
+			.pipe(gulp.dest('dist/assets/css/fonts'));
 
-	var buildSvg = gulp.src('app/images/**/*.svg')
-		.pipe(gulp.dest('dist/images'));
+	var buildSvg = gulp.src('app/assets/images/**/*.svg')
+		.pipe(gulp.dest('dist/assets/images'));
 
-	var buildFonts = gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'));
+	var buildFonts = gulp.src('app/assets/fonts/**/*')
+		.pipe(gulp.dest('dist/assets/fonts'));
 
 	var buildJs = gulp.src([
-		'app/js/script.js',
-		'app/js/libs.min.js',
+		'app/assets/js/script.js',
+		'app/assets/js/libs.min.js',
 	])
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('dist/assets/js'));
 
 	var buildHtml = gulp.src('app/*.html')
 		.pipe(gulp.dest('dist'));
@@ -140,3 +145,12 @@ gulp.task('build', done => {
 gulp.task('start', gulp.series('serve', 'css-libs', 'scripts'));
 gulp.task('done', gulp.series('clean', 'build', 'sass', 'scripts', 'img'));
 gulp.task('libs', gulp.series('css-libs', 'scripts'));
+
+
+gulp.task('fa-min', function () {
+	return gulp.src('fa/font-awesome.css')
+
+		.pipe(cssnano())
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(gulp.dest('fa'));
+})

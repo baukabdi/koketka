@@ -1,0 +1,51 @@
+@import 'vars'
+
+body
+	font-family: $def-font
+
+a
+	color: inherit
+	
+.aic
+	align-items: center
+
+.jcc
+	justify-content: center
+
+.g-gutter
+	padding-left: 20px
+	padding-right: 20px
+
+.button_custom
+	@include button($button)
+	padding: 6px 15px
+	border-radius: 30px
+	outline: none
+	font-family: $bold
+	position: relative
+	overflow: hidden
+	border: 1px solid transparent
+	display: inline-block
+	z-index: 0
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		background-color: #fff
+		width: 50px
+		height: 100px
+		top: -20px
+		left: -100%
+		transform: rotate(30deg)
+		z-index: -1
+
+	&:hover
+		text-decoration: none
+		border: 1px solid #FFC0CB
+		color: darken(#fff, 10) !important
+		&::after
+			left: 100%
+			transition: 0.5s ease-out
+
+h2
+	font-size: 38px

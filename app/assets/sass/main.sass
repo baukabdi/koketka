@@ -1,0 +1,110 @@
+@import "all"
+@import "vars"
+@import "fonts"
+
+
+
+//==== Header BEGIN ====//
+.header
+	background-color: $accent
+	padding-top: 10px
+	color: #fff
+	font-size: 14px
+	position: relative
+	z-index: 0
+
+	&::after
+		content: ''
+		background-image: url('../images/header-bottom.svg')
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		bottom: -3px
+		left: 0
+		width: 100%
+		height: 8px
+		z-index: -1
+	a
+		transition: color 0.3s ease-out
+		&:hover
+			color: $text
+	p
+		margin: 0
+	.header_logo
+		z-index: 0
+		position: relative
+		top: 3px
+		img
+			width: 215px
+	.header_search
+		background-color: #fff
+		border-radius: 5px
+		max-width: 300px
+		display: flex
+		justify-content: space-between
+		padding: 4px 12px
+		input,
+		button
+			background: transparent
+			border: none
+			padding: 0
+			margin-right: -5px
+		input
+			width: 100%
+
+	.header_contacts
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #fff
+	.header_social
+		margin-right: 12px
+		white-space: nowrap
+		a
+			font-size: 26px
+			&:nth-last-child(n+2)
+				margin-right: 15px
+	.p_title
+		font-family: $regular
+		font-weight: 600
+	.header_phone
+		.p_item
+			display: flex
+			font-family: $light
+			p
+				white-space: nowrap
+				&:nth-last-child(n+2)
+					margin-right: 12px
+
+	.cart_button
+		position: relative
+		max-width: 130px
+		margin-left: auto
+		img
+			margin-right: 10px
+		.cart_quantity
+			position: absolute
+			top: 0
+			right: 0
+			@include button($button)
+			border-radius: 50%
+			width: 22px
+			height: 22px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+
+	.sign-up_in
+		display: flex
+		align-items: center
+		a
+			&:first-child
+				margin-right: 12px
+		.sign_in
+			min-width: 72px
+
+
+/* Header Responsive */
+// @media screen and(max-width)
+//==== Header END ====//

@@ -7,14 +7,94 @@
 
 	<title>Koketka</title>
 
-	<link rel="stylesheet" href="css/main.css">
+	<!--- Сжатые и объединенные библиотеки CSS
+ 	<link rel="stylesheet" href="assets/css/libs.min.css">
+	================================================== -->
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
+	
+	<header class="header g-gutter" id="header">
+		<div class="container-fluid">
+			<div class="row aic">
 
+				<div class="col-sm-2">
+					<div class="header_logo">
+						<img src="assets/images/logo.svg" alt="">
+					</div>
+				</div>
 
-	<h1>KOKETKA</h1>
+				<div class="col-lg-3">
+					<form>
+						<div class="header_search">
+							<input type="text" placeholder="Поиск">
+							<button>
+								<img src="assets/images/magnify.svg" alt="">
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="header_contacts">
+						<div class="header_social">
+							<a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="#0"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						</div>
+
+						<div class="header_phone">
+							<p class="p_title">Телефони</p>
+							<div class="p_item">
+								<p>+359 889 315 972</p>
+								<p>+359 899 44 2363</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="cart_button">
+						<a href="#0">
+							<img src="assets/images/shopping-cart.svg" alt="">
+							<span>Корзина</span>
+						</a>
+						<span class="cart_quantity">1</span>
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<div class="sign-up_in">
+						<a href="#" class="sign_up">
+							Зарегистрироваться
+						</a>
+						<a href="#" class="sign_in button_custom">
+							Войти
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 	
 
 
+
+<!--- Сжатые и объединенные библиотеки JS
+<script src="assets/js/libs.min.js"></script>
+================================================== -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.inputmask.min.js"></script>
+<script src="assets/js/lc_lightbox.lite.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
+
 </html>
