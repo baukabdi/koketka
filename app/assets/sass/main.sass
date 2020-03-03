@@ -12,7 +12,6 @@
 	font-size: 14px
 	position: relative
 	z-index: 0
-
 	&::after
 		content: ''
 		background-image: url('../images/header-bottom.svg')
@@ -30,16 +29,22 @@
 			color: $text
 	p
 		margin: 0
+	.header_row
+		display: flex
+		justify-content: space-between
+		align-items: center
 	.header_logo
 		z-index: 0
 		position: relative
 		top: 3px
 		img
 			width: 215px
+	.header_search_wrap
+		max-width: 300px
+		width: 100%
 	.header_search
 		background-color: #fff
 		border-radius: 5px
-		max-width: 300px
 		display: flex
 		justify-content: space-between
 		padding: 4px 12px
@@ -70,6 +75,7 @@
 	.header_phone
 		.p_item
 			display: flex
+			flex-wrap: wrap
 			font-family: $light
 			p
 				white-space: nowrap
@@ -79,7 +85,7 @@
 	.cart_button
 		position: relative
 		max-width: 130px
-		margin-left: auto
+		width: 100%
 		img
 			margin-right: 10px
 		.cart_quantity
@@ -106,5 +112,125 @@
 
 
 /* Header Responsive */
-// @media screen and(max-width)
+@media screen and(max-width: 1300px)
+	.header 
+		.header_search_wrap
+			margin: 0 20px
 //==== Header END ====//
+
+
+
+
+
+
+//==== Main top BEGIN ====//
+.sidebar_left
+	padding-top: 30px
+
+.sidebar_category
+	ul
+		padding: 0
+		list-style-type: none
+		a
+			font-family: $medium
+			color: $text
+			font-size: 15px
+			margin-bottom: 15px
+			display: inline-block
+
+
+.menu_wrap
+	padding-top: 18px
+	.menu_list_wrap
+		display: flex
+		align-items: center
+		position: relative
+	ul
+		list-style-type: none
+		padding: 0
+		a
+			display: block
+			margin-right: 25px
+			font-size: 18px
+			font-family: $medium
+			color: $text
+			text-decoration: none
+			position: relative
+			&:hover
+				&::before
+					width: 100%
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: -5px
+				width: 0
+				left: 50%
+				transform: translateX(-50%)
+				height: 2px
+				background-color: $accent
+				transition: 0.3s ease-out
+		.current_page_item
+			a
+				background-color: rgba($accent, .2)
+				padding: 12px 20px
+				border-radius: 30px
+				transition: 0.3s ease-out
+				text-decoration: none
+				&:hover
+					background-color: $accent
+					color: #fff
+					&::before
+						display: none
+
+		.menu-item-has-children
+			a
+				position: relative
+				&::after
+					content: "\f0d7"
+					font: normal normal normal 14px/1 FontAwesome
+					margin-left: 10px
+		
+
+		.sub-menu
+			display: flex
+			border-radius: 10px
+			position: absolute
+			left: 0
+			padding: 30px 0 15px 25px
+			box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15)
+			z-index: 1
+			ul
+				padding: 0
+			.sub_list
+				margin-right: 60px
+				margin-bottom: 30px
+			li
+				a
+					font-family: $regular
+					color: $accent
+					margin-bottom: 15px
+					display: inline-block
+					&::before
+						background-color: $text
+					&::after
+						display: none
+			.left
+				display: flex
+				flex-wrap: wrap
+				z-index: 1
+				width: 65%
+			.sub_title
+				text-transform: uppercase
+				font-size: 16px
+				font-family: $bold
+				color: $text
+				margin-bottom: 20px
+			.right
+				img
+					height: 100%
+					position: absolute
+					top: 0
+					right: 0
+					border-radius: 0 10px 10px 0
+//==== Main top END ====//

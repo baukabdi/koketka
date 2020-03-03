@@ -9,40 +9,39 @@
 
 	<!--- Сжатые и объединенные библиотеки CSS
  	<link rel="stylesheet" href="assets/css/libs.min.css">
-	================================================== -->
+ 	================================================== -->
 
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/css/main.css">
-</head>
+ 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="assets/css/normalize.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+ 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="assets/css/slick.css">
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ </head>
 
-<body>
-	
-	<header class="header g-gutter" id="header">
-		<div class="container-fluid">
-			<div class="row aic">
+ <body>
 
-				<div class="col-sm-2">
+	<!--- Header BEGIN
+		======================================== -->
+		<header class="header g-gutter" id="header">
+			<div class="container-fluid">
+
+				<div class="header_row">
 					<div class="header_logo">
 						<img src="assets/images/logo.svg" alt="">
 					</div>
-				</div>
 
-				<div class="col-lg-3">
-					<form>
-						<div class="header_search">
-							<input type="text" placeholder="Поиск">
-							<button>
-								<img src="assets/images/magnify.svg" alt="">
-							</button>
-						</div>
-					</form>
-				</div>
+					<div class="header_search_wrap">
+						<form>
+							<div class="header_search">
+								<input type="text" placeholder="Поиск">
+								<button>
+									<img src="assets/images/magnify.svg" alt="">
+								</button>
+							</div>
+						</form>
+					</div>
 
-				<div class="col-sm-3">
 					<div class="header_contacts">
 						<div class="header_social">
 							<a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -57,9 +56,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-2">
 					<div class="cart_button">
 						<a href="#0">
 							<img src="assets/images/shopping-cart.svg" alt="">
@@ -67,9 +64,7 @@
 						</a>
 						<span class="cart_quantity">1</span>
 					</div>
-				</div>
 
-				<div class="col-sm-2">
 					<div class="sign-up_in">
 						<a href="#" class="sign_up">
 							Зарегистрироваться
@@ -77,12 +72,108 @@
 						<a href="#" class="sign_in button_custom">
 							Войти
 						</a>
-					</div>
+					</div>	
 				</div>
+
 			</div>
-		</div>
-	</header>
-	
+		</header>
+ 	<!--- Header END
+ 		======================================== -->
+
+ 		<main>
+ 			<div class="container-fluid g-gutter">
+ 				<div class="row">
+ 					<div class="col-sm-2">
+ 						<div class="sidebar_left">
+ 							<nav class="sidebar_category">
+ 								<h3 class="min_title sidebar_title">Категории продукти</h3>
+ 								<ul>
+ 									<li><a href="#">Дрехи</a></li>
+ 									<li><a href="#"><span class="uppercase">Разпродажба</span></a></li>
+ 									<li><a href="#">Козметика <span class="uppercase">Pure Paws</span></a></li>
+ 									<li><a href="#">Легла</a></li>
+ 									<li><a href="#">Чанти</a></li>
+ 									<li><a href="#">Нагръдници и каишки</a></li>
+ 									<li><a href="#">Обувки и чорапи</a></li>
+ 									<li><a href="#">Аксесоари</a></li>
+ 									<li><a href="#">Лакомства</a></li>
+ 								</ul>
+ 							</nav>
+ 						</div>
+ 					</div>
+
+ 					<div class="col-sm-10">
+ 						<nav class="menu_wrap">
+ 							<ul class="menu_list_wrap">
+ 								<li class="menu-item current_page_item"><a href="#0">Начало</a></li>
+ 								<li class="menu-item"><a href="#0">За нас</a></li>
+ 								<li class="menu-item menu-item-has-children">
+ 									<a href="#0">Магазин</a>
+ 									<ul class="sub-menu">
+ 										<div class="left">
+ 											<li class="sub_list">
+ 												<h4 class="sub_title">КОЗМЕТИКА PURE PAWS</h4>
+ 												<ul>
+ 													<li><a href="#">Промоции</a></li>
+ 													<li><a href="#">Шампоани</a></li>
+ 													<li><a href="#">Балсами и спрейове</a></li>
+ 													<li><a href="#">Изложбена козметика</a></li>
+ 													<li><a href="#">Грижа за здравето</a></li>
+ 												</ul>
+ 											</li>
+
+ 											<li class="sub_list">
+ 												<h4 class="sub_title">РАЗПРОДАЖБА</h4>
+ 												<ul>
+ 													<li><a href="#">ЛЕГЛА</a></li>
+ 													<li><a href="#">ЧАНТИ</a></li>
+ 													<li><a href="#">ОБУВКИ</a></li>
+ 													<li><a href="#">ЛАКОМСТВА</a></li>
+ 												</ul>
+ 											</li>
+
+ 											<li class="sub_list">
+ 												<h4 class="sub_title">АКСЕСОАРИ</h4>
+ 												<ul>
+ 													<li><a href="#">Изложбени поводи</a></li>
+ 													<li><a href="#">Панделки, шноли, фиби</a></li>
+ 													<li><a href="#">Изложбени панделки</a></li>
+ 												</ul>
+ 											</li>
+
+ 											<li class="sub_list">
+ 												<h4 class="sub_title">ДРЕХИ</h4>
+ 												<ul>
+ 													<li><a href="#">Зимни</a></li>
+ 													<li><a href="#">Пролетно/Есенни</a></li>
+ 													<li><a href="#">Дъждобрани</a></li>
+ 													<li><a href="#">Летни дрехи</a></li>
+ 												</ul>
+ 											</li>
+
+ 											<li class="sub_list">
+ 												<h4 class="sub_title">НАГРЪДНИЦИ И КАИШКИ</h4>
+ 												<ul>
+ 													<li><a href="#">Каишки</a></li>
+ 													<li><a href="#">Нагръдници</a></li>
+ 												</ul>
+ 											</li>
+ 										</div>
+										
+										<div class="right" style="background-image: url(assets/images/submenu-bg.jpg);">
+											<img src="assets/images/submenu-bg.jpg" alt="">
+										</div>
+ 									</ul>
+ 								</li>
+ 								<li class="menu-item"><a href="#0">Контакти</a></li>
+ 							</ul>
+ 						</nav>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</main>
+
+
 
 
 
