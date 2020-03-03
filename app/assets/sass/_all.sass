@@ -27,7 +27,6 @@ a
 	font-family: $bold
 	position: relative
 	overflow: hidden
-	border: 1px solid transparent
 	display: inline-block
 	z-index: 0
 	&::after
@@ -44,11 +43,15 @@ a
 
 	&:hover
 		text-decoration: none
-		border: 1px solid #FFC0CB
 		color: darken(#fff, 10) !important
 		&::after
-			left: 100%
+			left: 120%
 			transition: 0.5s ease-out
+
+.accent_title
+	color: $accent
+	font-size: 40px
+	font-family: $medium
 
 h2
 	font-size: 38px
@@ -67,3 +70,12 @@ h2
 		width: 100%
 		height: 5px
 		margin-top: 8px
+
+
+.social_custom
+	font-size: 26px
+	color: #fff
+	a
+		transition: 0.3s ease-out
+		&:hover
+			color: $text
