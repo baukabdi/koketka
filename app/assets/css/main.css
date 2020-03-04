@@ -326,6 +326,25 @@ h2 {
   z-index: -1;
 }
 
+.header .chat {
+  position: fixed;
+  background-color: #C09D84;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+  top: 12rem;
+  right: 25px;
+  z-index: 12;
+}
+
+.header .chat:hover {
+  background-color: #FF96A9;
+}
+
+.header .chat a {
+  display: block;
+  padding: 17px;
+}
+
 .header a {
   transition: color 0.3s ease-out;
 }
@@ -816,24 +835,6 @@ h2 {
   color: #fff;
   padding: 12px 25px;
   font-family: "Stem-Light";
-}
-
-.main_banner .chat {
-  position: absolute;
-  background-color: #C09D84;
-  border-radius: 50%;
-  transition: 0.3s ease-out;
-  top: 35px;
-  right: 25px;
-}
-
-.main_banner .chat:hover {
-  background-color: #FF96A9;
-}
-
-.main_banner .chat a {
-  display: block;
-  padding: 17px;
 }
 
 .main_banner .banner_arrow_prev,
