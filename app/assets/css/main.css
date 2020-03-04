@@ -236,6 +236,13 @@ h2 {
   display: flex;
 }
 
+.form_custom .required::after {
+  content: '*';
+  display: inline;
+  color: #EB5757;
+  margin-left: 6px;
+}
+
 .form_sign_up {
   max-width: 375px;
 }
@@ -276,6 +283,46 @@ h2 {
 .form_sign_in {
   max-width: 470px;
   width: 100%;
+}
+
+.bread_crumbs {
+  margin-bottom: 35px;
+}
+
+.bread_crumbs ul {
+  display: flex;
+  list-style-type: none;
+  color: #828282;
+  padding: 0;
+  margin: 0;
+}
+
+.bread_crumbs ul li:nth-last-child(n+2) a {
+  margin-right: 8px;
+  transition: 0.3s ease-out;
+}
+
+.bread_crumbs ul li:nth-child(n+2) {
+  margin-left: 8px;
+}
+
+.bread_crumbs ul li a:hover {
+  color: #67432B;
+}
+
+.bread_crumbs ul .bread_crumb_currency {
+  color: #000;
+}
+
+.multiselect-list {
+  padding: 14px !important;
+  border: none !important;
+  border-radius: 5px;
+  box-shadow: 0px 10px 12.8px 3.2px rgba(0, 0, 0, 0.1);
+}
+
+.multiselect-list label {
+  user-select: none;
 }
 
 /*===== Stem Light =====*/
@@ -992,6 +1039,70 @@ h2 {
   .s-products .products_row .bottom {
     flex-direction: column;
   }
+}
+
+.s-product_single {
+  display: flex;
+}
+
+.s-product_single .left {
+  width: 30%;
+  margin-right: 22px;
+  position: relative;
+}
+
+.s-product_single .product_single_fotorama .fotorama__img {
+  height: 100% !important;
+  top: 0 !important;
+}
+
+.s-product_single .right {
+  width: 70%;
+}
+
+.s-product_single .right h2 {
+  font-family: "Stem-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 38px;
+}
+
+.s-product_single .right .price {
+  font-family: "Stem-Bold";
+  font-size: 38px;
+  color: #000;
+}
+
+.s-product_single .ball {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-color: #2D9CDB;
+  font-family: "Roboto-Regular";
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+.s-product_single .fotorama__nav {
+  display: flex;
+}
+
+.s-product_single .fotorama__thumb-border {
+  border-color: #FF96A9;
+}
+
+.s-product_single .fotorama__fullscreen-icon {
+  right: auto;
+  top: 10px;
+  left: 10px;
+}
+
+.s-product_single .fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon:not(:focus) {
+  -webkit-transform: translate3d(-32px, -32px, 0);
+  transform: translate3d(-32px, -32px, 0);
 }
 
 .footer {

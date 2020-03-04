@@ -539,6 +539,55 @@
 //==== Products cart END ====//
 
 
+//==== Products Single START ====//
+.s-product_single
+	display: flex
+	.left
+		width: 30%
+		margin-right: 22px
+		position: relative
+	.product_single_fotorama 
+		.fotorama__img
+			height: 100% !important
+			top: 0 !important
+	.right
+		width: 70%
+		h2
+			font-family: $regular
+			font-style: normal
+			font-weight: normal
+			font-size: 38px
+			line-height: 38px
+		.price
+			font-family: $bold
+			font-size: 38px
+			color: #000
+
+	.ball
+		position: absolute
+		top: 16px
+		right: 20px
+		background-color: $blue
+		font-family: $roboto
+		font-weight: 700
+		color: #fff
+		padding: 8px 15px
+		border-radius: 30px
+
+	.fotorama__nav
+		display: flex
+	.fotorama__thumb-border
+		border-color: $accent
+	.fotorama__fullscreen-icon
+		right: auto
+		top: 10px
+		left: 10px
+	.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon:not(:focus)
+		-webkit-transform: translate3d(-32px,-32px,0)
+		transform: translate3d(-32px,-32px,0)
+//==== Products Single END ====//
+
+
 //==== Footer START ====//
 .footer
 	background-color: $footer
@@ -589,6 +638,4 @@
 		a
 			font-size: 36px
 			margin-right: 10px
-
-
 //==== Footer END ====//

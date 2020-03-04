@@ -55,6 +55,30 @@ $(document).ready(function() {
 	$('.popup_close').on('click', function() {
 		$.fancybox.close();
 	});
+
 	/*===== Fancybox options END =====*/
+
+
+	/*===== Fotorama for product single Options START =====*/
+	$('.product_single_fotorama').fotorama({
+		width: 450,
+		height: 381,
+		thumbwidth: '140px',
+		thumbheight: '118px',
+		thumbmargin: 15,
+		arrows: false,
+		allowfullscreen: true
+	});
+
+	$(document).on('mouseover', '.fotorama__nav__frame', function () {
+		var $fotoramaDiv = $(this).parents('.fotorama'),
+		fotoramaApi = $fotoramaDiv.data('fotorama');
+		fotoramaApi.show({
+			index: $('.fotorama__nav__frame', $fotoramaDiv).index(this)
+		});
+	});
+	/*===== Fotorama for product single Options END =====*/
+
+	$('.multi_select').multiselect();
 
 });

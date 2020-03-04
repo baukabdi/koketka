@@ -18,6 +18,7 @@
  	<link rel="stylesheet" href="assets/css/slick.css">
  	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
  	<link rel="stylesheet" href="assets/css/fotorama.css">
+ 	<link rel="stylesheet" href="assets/css/multiselect.css">
  	<link rel="stylesheet" href="assets/css/main.css">
  </head>
 
@@ -35,7 +36,7 @@
  				<input type="text" id="your-name">
 
  				<label for="message">Сообщение</label>
- 				<textarea name="" id="message" cols="30" rows="10"></textarea>
+ 				<textarea name="" id="message" cols="30" rows="8"></textarea>
 
  				<button>Отправить</button>
  			</div>
@@ -48,27 +49,27 @@
  			</div>
  		</form>
 
-	
-		<!------------ Sign In ------------>
+
+ 		<!------------ Sign In ------------>
  		<form action="" id="sign_in" class="form_custom form_sign_in" style="display: none;">
  			<div class="form_item">
  				<h4>Войти</h4>
 
- 				<label class="required" for="login">Логин</label>
+ 				<label for="login">Логин</label>
  				<input type="text" id="login">
 
- 				<label class="required" for="password">Пароль</label>
+ 				<label for="password">Пароль</label>
  				<input type="text" id="password">
-				
-				<div class="checkbox_wrap">
-					<div class="checkbox_custom">
-						<input type="checkbox" id="remember_me">
-						<label for="remember_me">Запомнить меня</label>
-					</div>
-					<div class="forgot_password">
-						<a href="#0">Забыли пароль?</a>
-					</div>
-				</div>
+
+ 				<div class="checkbox_wrap">
+ 					<div class="checkbox_custom">
+ 						<input type="checkbox" id="remember_me">
+ 						<label for="remember_me">Запомнить меня</label>
+ 					</div>
+ 					<div class="forgot_password">
+ 						<a href="#0">Забыли пароль?</a>
+ 					</div>
+ 				</div>
 
  				<button>Войти</button>
  			</div>
@@ -81,13 +82,13 @@
  			</div>
  		</form>
 
-		
-		<!------------ Sign Up ------------>
+
+ 		<!------------ Sign Up ------------>
  		<form action="" id="sign_up" class="form_custom form_sign_up" style="display: none;">
  			<div class="form_item">
  				<h4>Регистрация</h4>
 
- 				<label class="required" for="email">Ваш e-майл</label>
+ 				<label for="email">Ваш e-mail</label>
  				<input type="text" id="email">
 
  				<div class="checkbox_custom">
@@ -282,129 +283,52 @@
  							</ul>
  						</nav>
 
- 						<section class="main_banner">
- 							<div class="banner_arrow_prev">
- 								<img src="assets/images/slide-prev.svg" alt="">
- 							</div>
- 							<div class="main_banner_slider">
- 								<!-- Slide BEGIN -->
- 								<div class="banner_item" style="background-image: url(assets/images/banner.jpg);">
- 									<h1 class="accent_title">
- 										ТЕНИСКА С ЯКА 16.00 лв.
- 										<del>
- 											<span>
- 												26.00 лв.
- 											</span>
- 										</del>
- 									</h1>
- 									<p>Памучна тениска с къс ръкав и яка на райета.</p>
- 									<a href="#" class="button_custom">Купить</a>
- 								</div>
- 								<!-- Slide END -->
-
- 								<!-- Slide BEGIN -->
- 								<div class="banner_item" style="background-image: url(assets/images/banner.jpg);">
- 									<h1 class="accent_title">
- 										ТЕНИСКА С ЯКА 16.00 лв.
- 										<del>
- 											<span>
- 												26.00 лв.
- 											</span>
- 										</del>
- 									</h1>
- 									<p>Памучна тениска с къс ръкав и яка на райета.</p>
- 									<a href="#" class="button_custom">Купить</a>
- 								</div>
- 								<!-- Slide END -->
-
- 								<!-- Slide BEGIN -->
- 								<div class="banner_item" style="background-image: url(assets/images/banner.jpg);">
- 									<h1 class="accent_title">
- 										ТЕНИСКА С ЯКА 16.00 лв.
- 										<del>
- 											<span>
- 												26.00 лв.
- 											</span>
- 										</del>
- 									</h1>
- 									<p>Памучна тениска с къс ръкав и яка на райета.</p>
- 									<a href="#" class="button_custom">Купить</a>
- 								</div>
- 								<!-- Slide END -->
- 							</div>
- 						</section>
-
- 						<section class="s-products">
- 							<ul class="products_row">
- 								<li class="products_item">
- 									<a href="product_single.html">
- 										<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image">	
- 									</a>
- 									<div class="bottom">
- 										<h2 class="woocommerce-loop-product__title">Дрехи</h2>
- 										<a href="product_single.html" class="button product_type_simple">Подробнее</a>
- 									</div>
- 								</li>
-
- 								<li class="products_item">
- 									<a href="product_single.html">
- 										<img src="assets/images/product-2.png" class="woocommerce-placeholder wp-post-image">	
- 									</a>
- 									<div class="bottom">
- 										<h2 class="woocommerce-loop-product__title">РАЗПРОДАЖБА</h2>
- 										<a href="product_single.html" class="button product_type_simple">Подробнее</a>
- 									</div>
- 									<div class="favourite">
- 										<img src="assets/images/favourite.png" alt="">
- 									</div>
- 								</li>
-
- 								<li class="products_item">
- 									<a href="product_single.html">
- 										<img src="assets/images/product-3.png" class="woocommerce-placeholder wp-post-image">	
- 									</a>
- 									<div class="bottom">
- 										<h2 class="woocommerce-loop-product__title">Козметика PURE PAWS</h2>
- 										<a href="product_single.html" class="button product_type_simple">Подробнее</a>
- 									</div>
- 									<div class="favourite">
- 										<img src="assets/images/favourite.png" alt="">
- 									</div>
- 								</li>
-
- 								<li class="products_item">
- 									<a href="product_single.html">
- 										<img src="assets/images/product-4.png" class="woocommerce-placeholder wp-post-image">	
- 									</a>
- 									<div class="bottom">
- 										<h2 class="woocommerce-loop-product__title">Легла</h2>
- 										<a href="product_single.html" class="button product_type_simple">Подробнее</a>
- 									</div>
- 									<div class="favourite">
- 										<img src="assets/images/favourite.png" alt="">
- 									</div>
- 								</li>
-
- 								<li class="products_item">
- 									<a href="product_single.html">
- 										<img src="assets/images/product-5.png" class="woocommerce-placeholder wp-post-image">	
- 									</a>
- 									<div class="bottom">
- 										<h2 class="woocommerce-loop-product__title">Нагръдници и каишки</h2>
- 										<a href="product_single.html" class="button product_type_simple">Подробнее</a>
- 									</div>
- 								</li>
-
- 								<li class="products_item">
- 									<a href="product_single.html">
- 										<img src="assets/images/product-6.png" class="woocommerce-placeholder wp-post-image">	
- 									</a>
- 									<div class="bottom">
- 										<h2 class="woocommerce-loop-product__title">Обувки и чорапи</h2>
- 										<a href="product_single.html" class="button product_type_simple">Подробнее</a>
- 									</div>
- 								</li>
+ 						<!-------------- Bread Crumbs START -------------->
+ 						<nav class="bread_crumbs">
+ 							<ul>
+ 								<li><a href="#0">Начало</a></li>
+ 								<span>/</span>
+ 								<li><a href="#0">Козметика PURE PAWS</a></li>
+ 								<span>/</span>
+ 								<li><a href="#0">Изложбена козметика</a></li>
+ 								<span>/</span>
+ 								<li class="bread_crumb_currency"><a href="#">ХИДРАТИРАЩ СПРЕЙ СКРЕЖ И СНЕЖИНКИ</a></li>
  							</ul>
+ 						</nav>
+ 						<!-------------- Bread Crumbs END -------------->
+
+
+ 						<section class="s-product_single">
+ 							<div class="left">
+ 								<div class="product_single_fotorama fotorama" data-nav="thumbs">
+ 									<img data-test="123" src="assets/images/fotorama-1.png">
+ 									<img data-test="123" src="assets/images/fotorama-2.png">
+ 									<img data-test="123" src="assets/images/fotorama-3.png">
+ 									<img data-test="123" src="assets/images/fotorama-4.png">
+ 								</div>
+ 								<div class="ball">
+ 									+10 баллов
+ 								</div>
+ 							</div>
+ 							
+ 							<div class="right">
+								<h2>НАГРЪДНИКЪ ПТАУН В</h4>
+								<p class="price">49.00 лв</p>
+
+								<div class="select_wrap">
+
+									<select id="multi_select" class="multi_select" multiple>
+										<option value='1'>Item 1</option>
+										<option value='2'>Item 2</option>
+										<option value='3'>Item 3</option>
+										<option value='4'>Item 4</option>
+										<option value='5'>Item 5</option>
+									</select>
+
+									<a href="#0" class="button_custom">Купить</a>
+								</div>
+ 							</div>
+ 							
  						</section>
  					</div>
  				</div>
@@ -475,10 +399,13 @@
 ================================================== -->
 
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.inputmask.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
 <script src="assets/js/fotorama.js"></script>
+<script src="assets/js/multiselect.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 
