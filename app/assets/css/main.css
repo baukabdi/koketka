@@ -100,6 +100,59 @@ h2 {
   color: #67432B;
 }
 
+.form_custom {
+  font-family: "Roboto-Regular";
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+  top: 50px;
+  left: 50px;
+  border-radius: 20px;
+}
+
+.form_custom .form_item {
+  padding: 36px 26px;
+}
+
+.form_custom h4 {
+  color: #FF96A9;
+  font-family: "Stem-Bold";
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form_custom input,
+.form_custom textarea {
+  display: block;
+  border: 1px solid #E0E0E0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 26px;
+  width: 100%;
+}
+
+.form_custom label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.form_custom button {
+  background: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+.form_custom button:hover {
+  background: #67432B;
+}
+
 /*===== Stem Light =====*/
 @font-face {
   font-family: "Stem-Light";
@@ -128,6 +181,15 @@ h2 {
 @font-face {
   font-family: "Stem-Bold";
   src: url("fonts/stem/Stem-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*===== Roboto Regular =====*/
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.woff2");
+  src: url("../fonts/RobotoRegular/RobotoRegular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -460,10 +522,6 @@ h2 {
   z-index: 2;
 }
 
-.menu_wrap .menu_list_wrap li {
-  z-index: 1;
-}
-
 .menu_wrap ul {
   list-style-type: none;
   padding: 0;
@@ -477,6 +535,7 @@ h2 {
   color: #67432B;
   text-decoration: none;
   position: relative;
+  z-index: 2;
 }
 
 .menu_wrap ul a:hover::before {
@@ -539,7 +598,7 @@ h2 {
   left: 0;
   padding: 90px 0 15px 25px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  z-index: 0;
   visibility: hidden;
   opacity: 0;
   transform: translateY(20%);

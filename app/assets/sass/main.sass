@@ -264,8 +264,6 @@
 		align-items: center
 		position: relative
 		z-index: 2
-		li
-			z-index: 1
 	ul
 		list-style-type: none
 		padding: 0
@@ -277,6 +275,7 @@
 			color: $text
 			text-decoration: none
 			position: relative
+			z-index: 2
 			&:hover
 				&::before
 					width: 100%
@@ -328,7 +327,7 @@
 			left: 0
 			padding: 90px 0 15px 25px
 			box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15)
-			z-index: 1
+			z-index: 0
 			visibility: hidden
 			opacity: 0
 			transform: translateY(20%)
@@ -380,7 +379,7 @@
 	overflow: hidden
 	.slick-list
 		overflow: hidden
-		border-radius: 20px
+		border-radius: $bd-radius
 	.banner_item
 		padding: 60px 25px
 		background-size: cover
@@ -458,7 +457,7 @@
 		li
 			padding: 20px 20px 0 0
 			@include product_bg
-			border-radius: 20px
+			border-radius: $bd-radius
 			width: 32.3%
 			position: relative
 			margin-bottom: 20px
