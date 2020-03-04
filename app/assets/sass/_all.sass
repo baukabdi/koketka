@@ -12,6 +12,9 @@ a
 .jcc
 	justify-content: center
 
+.jcsb
+	justify-content: space-between
+
 .g-gutter
 	padding-left: 20px
 	padding-right: 20px
@@ -80,16 +83,22 @@ h2
 		&:hover
 			color: $text
 
+/*===== Fancybox reset =====*/
+.fancybox-content
+	padding: 0
 
+.fancybox-slide--html 
+	.fancybox-close-small
+		background: none
+		display: none
+		&:hover
+			background: inherit
 
 .form_custom
 	font-family: $roboto
-	position: fixed
 	background-color: #fff
-	z-index: 99
-	top: 50px
-	left: 50px
 	border-radius: $bd-radius
+	display: inline-block
 	.form_item
 		padding: 36px 26px
 	h4
@@ -97,6 +106,7 @@ h2
 		font-family: $bold
 		font-size: 22px
 		margin-bottom: 20px
+
 	input,
 	textarea,
 		display: block
@@ -106,10 +116,12 @@ h2
 		margin-bottom: 26px
 		width: 100%
 
-	label
+	label,
+	a
 		display: block
 		font-size: 18px
 		margin-bottom: 0
+		user-select: none
 
 	button
 		background: linear-gradient(180deg, $button 0%, #B90144 100%)
@@ -120,6 +132,81 @@ h2
 		padding: 10px 30px
 		text-transform: uppercase
 		font-size: 24px
-		transition: 0.3s ease
+		//transition: 0.3s ease
 		&:hover
 			background: $text
+
+	.popup_close
+		cursor: pointer
+		background-color: $accent
+		position: absolute
+		top: 0
+		right: 0
+		width: 48px
+		height: 48px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		transition: 0.3s ease-out
+		border-radius: 0 0 0 $bd-radius
+		&:hover
+			background-color: $text
+
+	.checkbox_custom,
+	.forgot_password
+		display: flex
+		align-items: center
+		width: 50%
+		input
+			margin: 0
+			padding: 0
+			width: 18px
+			height: 18px
+			-moz-appearance: none
+			-webkit-appearance: none
+			appearance: none
+			margin-right: 12px
+			border: 1px solid #000
+			border-radius: 0
+			position: relative
+			display: block
+			&:checked
+				&::after
+					display: block
+			&::after
+				content: url('../images/check.svg')
+				width: 18px
+				position: absolute
+				top: -6px
+				right: -3
+				display: none
+
+	.forgot_password
+		a
+			margin-left: auto
+	.checkbox_wrap
+		margin-bottom: 25px
+		display: flex
+
+@media screen and(max-width: 410px)
+	.form_custom 
+		.checkbox_wrap
+			flex-direction: column
+			align-items: center
+		.checkbox_custom
+			margin-bottom: 15px
+			width: 100%
+			justify-content: center
+		.forgot_password
+			width: 100%
+			text-align: center
+			a
+				margin: 0 auto
+		button
+			display: block
+			margin: 0 auto
+
+.form_sign_in
+	max-width: 470px
+	width: 100%

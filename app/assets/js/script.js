@@ -45,6 +45,16 @@ $(document).ready(function() {
 		prevArrow: '<div class="banner_arrow_prev"><img src="assets/images/slide-prev.svg"></div>',
 		nextArrow: '<div class="banner_arrow_next"><img src="assets/images/slide-next.svg"></div>',
 	});
-	/*===== Main banner slider EMD =====*/
+	/*===== Main banner slider END =====*/
+
+	/*===== Fancybox options BEGIN =====*/
+	$('[data-fancybox]').fancybox({
+		touch: false,
+	});
+
+	$('.popup_close').on('click', function() {
+		$.fancybox.close();
+	});
+	/*===== Fancybox options END =====*/
 
 });
