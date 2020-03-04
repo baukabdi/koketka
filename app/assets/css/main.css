@@ -236,6 +236,20 @@ h2 {
   display: flex;
 }
 
+.form_sign_up {
+  max-width: 375px;
+}
+
+.form_sign_up .checkbox_custom {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.form_sign_up .checkbox_custom label {
+  width: 100%;
+  line-height: 1.4;
+}
+
 @media screen and (max-width: 410px) {
   .form_custom .checkbox_wrap {
     flex-direction: column;

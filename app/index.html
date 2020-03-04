@@ -24,6 +24,8 @@
 
  	<!--- Popup BEGIN
  		======================================== -->
+
+ 		<!------------ Callback ------------>
  		<form action="" id="callback_form" class="form_custom" style="display: none;">
  			<div class="form_item">
  				<h4>Свържете се с нас</h4>
@@ -45,8 +47,8 @@
  			</div>
  		</form>
 
-
-
+	
+		<!------------ Sign In ------------>
  		<form action="" id="sign_in" class="form_custom form_sign_in" style="display: none;">
  			<div class="form_item">
  				<h4>Войти</h4>
@@ -68,6 +70,31 @@
 				</div>
 
  				<button>Войти</button>
+ 			</div>
+
+ 			<div class="popup_close">
+ 				<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 					<line x1="18" y1="3.53553" x2="4.53553" y2="17" stroke="white" stroke-width="5" stroke-linecap="round"/>
+ 					<line x1="17.4645" y1="17" x2="4" y2="3.53554" stroke="white" stroke-width="5" stroke-linecap="round"/>
+ 				</svg>
+ 			</div>
+ 		</form>
+
+		
+		<!------------ Sign Up ------------>
+ 		<form action="" id="sign_up" class="form_custom form_sign_up" style="display: none;">
+ 			<div class="form_item">
+ 				<h4>Регистрация</h4>
+
+ 				<label for="email">Ваш e-mail</label>
+ 				<input type="text" id="email">
+
+ 				<div class="checkbox_custom">
+ 					<input type="checkbox" id="privacy_politic">
+ 					<label for="privacy_politic">Вие прочетохте нашата политика за лични данни.</label>
+ 				</div>
+
+ 				<button>Зарегистрироваться</button>
  			</div>
 
  			<div class="popup_close">
@@ -134,7 +161,7 @@
 						</div>
 
 						<div class="sign-up_in">
-							<a href="#" class="sign_up">
+							<a href="#" data-fancybox data-src="#sign_up" class="sign_up">
 								Зарегистрироваться
 							</a>
 							<a href="#0" data-src="#sign_in" data-fancybox class="sign_in button_custom">
