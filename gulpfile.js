@@ -19,7 +19,7 @@ gulp.task('serve', function () {
 		server: {
 			baseDir: 'app',
 			},		
-		notify: true,
+		notify: false,
 		open: true,
 		tunnel: false,
 	});

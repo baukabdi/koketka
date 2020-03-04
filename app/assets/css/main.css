@@ -138,7 +138,6 @@ h2 {
   color: #fff;
   font-size: 14px;
   position: relative;
-  z-index: 0;
 }
 
 .header::after {
@@ -179,7 +178,8 @@ h2 {
 }
 
 .header .header_logo img {
-  width: 215px;
+  max-width: 215px;
+  width: 100%;
 }
 
 .header .header_search_wrap {
@@ -205,6 +205,33 @@ h2 {
 
 .header .header_search input {
   width: 100%;
+}
+
+.header .header_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.header .search_button {
+  margin: 0 20px;
+}
+
+.header .search_button,
+.header .hamburger_button {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header .times_button {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  display: none;
 }
 
 .header .header_contacts {
@@ -250,6 +277,7 @@ h2 {
   position: relative;
   max-width: 130px;
   width: 100%;
+  margin-right: 35px;
 }
 
 .header .cart_button img {
@@ -286,9 +314,121 @@ h2 {
 }
 
 /* Header Responsive */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .header .header_search_wrap {
+    max-width: none;
+    width: 75%;
     margin: 0 20px;
+  }
+  .header .header_right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 11;
+    padding: 25px;
+    background-color: #FF96A9;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 3px 1px 17px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    transform: translateX(100%);
+  }
+  .header .header_right > div {
+    margin-bottom: 25px;
+  }
+  .header .sign-up_in,
+  .header .header_contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .sign-up_in a:first-child {
+    margin-bottom: 15px;
+  }
+  .header .header_social a {
+    font-size: 40px;
+  }
+  .header .header_phone .p_item p {
+    white-space: normal;
+  }
+  .header .cart_button {
+    margin-right: 0;
+    max-width: 166px;
+  }
+  .header .times_button,
+  .header .hamburger_button {
+    display: block;
+  }
+}
+
+.header_is_active {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .menu_wrap .menu_list_wrap {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .menu_wrap .menu_list_wrap li {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+  }
+  .menu_wrap .menu_list_wrap .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    padding: 20px;
+    top: 100%;
+    display: none;
+    transition: none;
+  }
+  .menu_wrap .menu_list_wrap .sub-menu .left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu_wrap .menu_list_wrap .sub-menu .right {
+    display: none;
+  }
+  .menu_wrap .menu_list_wrap .sub-menu .sub_list {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header .search_button {
+    display: block;
+  }
+  .header .header_search_wrap {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    display: none;
+  }
+  .header .header_search_wrap input {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .header .header_search_wrap button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .header_right {
+    width: 80%;
   }
 }
 
@@ -327,12 +467,6 @@ h2 {
 .menu_wrap ul {
   list-style-type: none;
   padding: 0;
-}
-
-.menu_wrap ul li:hover .sub-menu {
-  visibility: visible;
-  opacity: 1;
-  transform: none;
 }
 
 .menu_wrap ul a {
@@ -378,6 +512,12 @@ h2 {
 
 .menu_wrap ul .current_page_item a:hover::before {
   display: none;
+}
+
+.menu_wrap ul .menu-item-has-children:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
 }
 
 .menu_wrap ul .menu-item-has-children a {
@@ -561,38 +701,40 @@ h2 {
   margin-top: 20px;
 }
 
-.s-products .products {
+.s-products .products_row {
   list-style-type: none;
   padding: 0;
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.s-products .products li {
+.s-products .products_row li {
   padding: 20px 20px 0 0;
   background: linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 50%, #EBEBEB 100%);
   border-radius: 20px;
-  max-width: 32.3%;
+  width: 32.3%;
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
 }
 
-.s-products .products img {
+.s-products .products_row img {
   height: 100%;
 }
 
-.s-products .products a {
+.s-products .products_row a {
   display: inline-block;
 }
 
-.s-products .products .woocommerce-loop-product__title {
+.s-products .products_row .woocommerce-loop-product__title {
   color: #67432B;
   font-size: 20px;
   font-family: "Stem-Regular";
 }
 
-.s-products .products .product_type_simple {
+.s-products .products_row .product_type_simple {
   text-align: right;
   text-decoration: none;
   background: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
@@ -607,14 +749,15 @@ h2 {
   display: block;
   color: #fff;
   z-index: 0;
+  width: 115px;
 }
 
-.s-products .products .product_type_simple:hover::after {
+.s-products .products_row .product_type_simple:hover::after {
   transition: 0.8s ease;
   left: 120%;
 }
 
-.s-products .products .product_type_simple::after {
+.s-products .products_row .product_type_simple::after {
   content: '';
   display: block;
   position: absolute;
@@ -627,7 +770,7 @@ h2 {
   z-index: -1;
 }
 
-.s-products .products .bottom {
+.s-products .products_row .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -639,16 +782,35 @@ h2 {
   margin-bottom: 20px;
 }
 
-.s-products .products .favourite {
+.s-products .products_row .favourite {
   position: absolute;
   top: 0;
   right: 0;
 }
 
+/* Header Responsive */
+@media screen and (max-width: 1300px) {
+  .s-products .products_row li {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .s-products .products_row li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .s-products .products_row .bottom {
+    flex-direction: column;
+  }
+}
+
 .footer {
   background-color: #C4848F;
   color: #fff;
-  padding: 40px;
+  padding: 40px 25px;
   position: relative;
 }
 
