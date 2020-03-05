@@ -58,6 +58,7 @@ var scriptsPath = [
 		'app/assets/js/jquery.fancybox.min.js',
 		'app/assets/js/fotorama.js',
 		'app/assets/js/multiselect.min.js',
+		'app/assets/js/script.js',
 ];
 
 gulp.task('scripts', () => {
@@ -115,8 +116,14 @@ gulp.task('img', function () {
 /******** Build ********/
 gulp.task('build', done => {
 	var buildCss = gulp.src([
+		'app/assets/css/bootstrap.min.css',
+		'app/assets/css/normalize.css',
+		'app/assets/css/font-awesome.min.css',
+		'app/assets/css/slick.css',
+		'app/assets/css/jquery.fancybox.min.css',
+		'app/assets/css/fotorama.css',
+		'app/assets/css/multiselect.css',
 		'app/assets/css/main.css',
-		'app/assets/css/libs.min.css',
 	])
 		.pipe(gulp.dest('dist/assets/css'));
 
@@ -129,10 +136,7 @@ gulp.task('build', done => {
 	var buildFonts = gulp.src('app/assets/fonts/**/*')
 		.pipe(gulp.dest('dist/assets/fonts'));
 
-	var buildJs = gulp.src([
-		'app/assets/js/script.js',
-		'app/assets/js/libs.min.js',
-	])
+	var buildJs = gulp.src(scriptsPath)
 		.pipe(gulp.dest('dist/assets/js'));
 
 	var buildHtml = gulp.src('app/*.html')
