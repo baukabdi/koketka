@@ -5,93 +5,11 @@
  			<div class="container-fluid">
  				<div class="row">
  					<div class="col-sm-12 col-md-3 col-lg-2">
- 						<div class="sidebar_left">
- 							<nav class="sidebar_category">
- 								<h3 class="min_title sidebar_title">Категории продукти</h3>
- 								<ul>
- 									<li><a href="#">Дрехи</a></li>
- 									<li><a href="#"><span class="uppercase">Разпродажба</span></a></li>
- 									<li><a href="#">Козметика <span class="uppercase">Pure Paws</span></a></li>
- 									<li><a href="#">Легла</a></li>
- 									<li><a href="#">Чанти</a></li>
- 									<li><a href="#">Нагръдници и каишки</a></li>
- 									<li><a href="#">Обувки и чорапи</a></li>
- 									<li><a href="#">Аксесоари</a></li>
- 									<li><a href="#">Лакомства</a></li>
- 								</ul>
- 							</nav>
- 						</div>
+ 						<?php include('sidebar_category.php'); ?>
  					</div>
 
  					<div class="col-sm-12 col-md-9 col-lg-10">
- 						<nav class="menu_wrap">
- 							<ul class="menu_list_wrap">
- 								<li class="menu-item current_page_item"><a href="#0">Начало</a></li>
- 								<li class="menu-item"><a href="#0">За нас</a></li>
- 								<li class="menu-item menu-item-has-children">
- 									<a href="#0">Магазин</a>
-
- 									<!-- Submenu BEGIN -->
- 									<ul class="sub-menu">
- 										<div class="left">
- 											<li class="sub_list">
- 												<h4 class="sub_title">КОЗМЕТИКА PURE PAWS</h4>
- 												<ul>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">Промоции</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-2.jpg">Шампоани</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-3.jpg">Балсами и спрейове</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">Изложбена козметика</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-3.jpg">Грижа за здравето</a></li>
- 												</ul>
- 											</li>
-
- 											<li class="sub_list">
- 												<h4 class="sub_title">РАЗПРОДАЖБА</h4>
- 												<ul>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-2.jpg">ЛЕГЛА</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">ЧАНТИ</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-2.jpg">ОБУВКИ</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-3.jpg">ЛАКОМСТВА</a></li>
- 												</ul>
- 											</li>
-
- 											<li class="sub_list">
- 												<h4 class="sub_title">АКСЕСОАРИ</h4>
- 												<ul>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-2.jpg">Изложбени поводи</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">Панделки, шноли, фиби</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-3.jpg">Изложбени панделки</a></li>
- 												</ul>
- 											</li>
-
- 											<li class="sub_list">
- 												<h4 class="sub_title">ДРЕХИ</h4>
- 												<ul>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">Зимни</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-3.jpg">Пролетно/Есенни</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">Дъждобрани</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-2.jpg">Летни дрехи</a></li>
- 												</ul>
- 											</li>
-
- 											<li class="sub_list">
- 												<h4 class="sub_title">НАГРЪДНИЦИ И КАИШКИ</h4>
- 												<ul>
- 													<li><a href="#0" data-path="assets/images/submenu-bg.jpg">Каишки</a></li>
- 													<li><a href="#0" data-path="assets/images/submenu-bg-2.jpg">Нагръдници</a></li>
- 												</ul>
- 											</li>
- 										</div>
-
- 										<div class="right" id="#sub_menu_right">
- 											<img src="assets/images/submenu-bg.jpg" alt="">
- 										</div>
- 									</ul>
- 									<!-- Submenu END -->
- 								</li>
- 								<li class="menu-item"><a href="#0">Контакти</a></li>
- 							</ul>
- 						</nav>
+ 						<?php include('menu.php'); ?>
 
  						<!-- Bread Crumbs START -->
  						<nav class="bread_crumbs">
@@ -111,10 +29,10 @@
  						<section class="s-product_single">
  							<div class="left">
  								<div class="product_single_fotorama fotorama" data-nav="thumbs">
- 									<img data-test="123" src="assets/images/fotorama-1.png">
- 									<img data-test="123" src="assets/images/fotorama-2.png">
- 									<img data-test="123" src="assets/images/fotorama-3.png">
- 									<img data-test="123" src="assets/images/fotorama-4.png">
+ 									<img data-test="123" src="assets/images/fotorama-1.png" alt="Koketka">
+ 									<img data-test="123" src="assets/images/fotorama-2.png" alt="Koketka">
+ 									<img data-test="123" src="assets/images/fotorama-3.png" alt="Koketka">
+ 									<img data-test="123" src="assets/images/fotorama-4.png" alt="Koketka">
  								</div>
  								<div class="ball">
  									+10 баллов
@@ -122,7 +40,7 @@
  							</div>
  							
  							<div class="right">
-								<h2>НАГРЪДНИКЪ ПТАУН В</h4>
+								<h2>НАГРЪДНИКЪ ПТАУН В</h2>
 								<p class="price">49.00 лв</p>
 
 								<div class="select_wrap">
@@ -188,10 +106,10 @@
 										<p>Не замества балсама.</p>
 										<p><strong>Обем: 236,5 мл</strong></p>
 									</div>
-									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="testimonials-tab">
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="add-info-tab">
 										<p>Тегло	0.240 kg</p>
 									</div>
-									<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+									<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="testimonials-tab">...</div>
 								</div>
 							</div>
  						</section>
@@ -209,7 +127,7 @@
  										<h2 class="woocommerce-loop-product__title">КОПРИНЕН КРЕМ БАЛСАМ</h2>
  									</div>
  									<div class="favourite">
- 										<img src="assets/images/favourite.png" alt="">
+ 										<img src="assets/images/favourite.png" alt="Koketka">
  									</div>
  								</li>
 

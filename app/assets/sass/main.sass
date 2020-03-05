@@ -614,6 +614,7 @@
 			text-transform: uppercase
 			font-size: 24px
 			font-family: $regular
+			margin-top: 5px
 
 		.quantity
 			max-width: $input-width
@@ -642,6 +643,7 @@
 	.tab-content
 		padding-top: 30px
 		font-size: 18px
+		font-family: $roboto
 
 .related_products
 	h2
@@ -686,8 +688,39 @@
 		.nav-item
 			border: 1px solid $border
 			width: 100%
-			margin-bottom: 10px 
+			margin-bottom: 10px
 //==== Products Single END ====//
+
+
+//==== About BEGIN ====//
+.s-about
+	padding-bottom: 30px
+	.top
+		display: flex
+		img
+			max-width: 100%
+	.left
+		width: 40%
+		margin-right:	28px
+		margin-bottom: 28px
+	h3
+		margin-top: 30px
+		margin-bottom: 20px
+	p
+		font-size: 18px
+		font-family: $roboto
+	a
+		color: #2F80ED
+
+/**** About Responsive ****/
+@media screen and(max-width: 1200px)
+	.s-about
+		.top
+			flex-wrap: wrap
+		.left
+			margin-right: 0
+			width: 100%
+//==== About END ====//
 
 
 //==== Footer START ====//

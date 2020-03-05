@@ -6,6 +6,12 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-family: "Stem-Regular";
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
 h2 {
   font-family: "Stem-Medium";
   font-style: normal;
@@ -13,6 +19,12 @@ h2 {
   font-size: 24px;
   line-height: 31px;
   text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 38px;
 }
 
 .aic {
@@ -1362,6 +1374,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   text-transform: uppercase;
   font-size: 24px;
   font-family: "Stem-Regular";
+  margin-top: 5px;
 }
 
 .s-product_single .select_wrap .quantity {
@@ -1400,6 +1413,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
 .s-product_single .tab-content {
   padding-top: 30px;
   font-size: 18px;
+  font-family: "Roboto-Regular";
 }
 
 .related_products h2 {
@@ -1453,6 +1467,49 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
     border: 1px solid #E0E0E0;
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+.s-about {
+  padding-bottom: 30px;
+}
+
+.s-about .top {
+  display: flex;
+}
+
+.s-about .top img {
+  max-width: 100%;
+}
+
+.s-about .left {
+  width: 40%;
+  margin-right: 28px;
+  margin-bottom: 28px;
+}
+
+.s-about h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.s-about p {
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+}
+
+.s-about a {
+  color: #2F80ED;
+}
+
+/**** About Responsive ****/
+@media screen and (max-width: 1200px) {
+  .s-about .top {
+    flex-wrap: wrap;
+  }
+  .s-about .left {
+    margin-right: 0;
+    width: 100%;
   }
 }
 
