@@ -1,71 +1,105 @@
 $(document).ready(function() {
 
-	$('.phone_custom').inputmask("8 (999) 999 99 99");
-	
-	var bannerTopSlider = $('.banner__top');
-	bannerTopSlider.slick({
-		infinite: true,
-		nextArrow: '<img class="banner-top__arrow banner-top__arrow-next" src="images/arrow-right.png" alt="">',
-		prevArrow: '<img class="banner-top__arrow banner-top__arrow-prev" src="images/arrow-left.png" alt="">',
-		slidesToShow: 5,
-		responsive: [
-		{
-			breakpoint: 1100,
-			settings: {
-				slidesToShow: 4,
-			}
-		},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 3,
-			}
-		},
-		{
-			breakpoint: 660,
-			settings: {
-				slidesToShow: 2,
-			},
-		},
-		{
-			breakpoint: 440,
-			settings: {
-				slidesToShow: 1,
-			},
+	var headerRight = $('.header_right');
+	$('.hamburger_button').on('click', function() {		
+		headerRight.addClass('header_is_active');
+	});
+
+	$('.times_button').on('click', function() {
+		headerRight.removeClass('header_is_active');
+	});
+
+	$('.search_button').on('click', function() {
+		var search = $('.header_search_wrap');
+
+
+		if (!search.is(':visible')) {
+			search.slideDown('fast');
 		}
-		],
+		else {
+			search.slideUp('fast');
+		}
 	});
 
-	var worksSlider = $('.works-slider__wrap');
-	worksSlider.slick({
-		slidesToShow: 3,
-		infinite: true,
-		nextArrow: '<img class="works-slider__arrow works-slider__arrow-next" src="images/arrow-right.png" alt="">',
-		prevArrow: '<img class="works-slider__arrow works-slider__arrow-prev" src="images/arrow-left.png" alt="">',
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 575,
-				settings: {
-					slidesToShow: 1
-				}
+	$('.menu-item-has-children').on('click', function() {
+		var submenu = $(this).find('.sub-menu');
+		if (!submenu.is(':visible')) {
+			submenu.slideDown(500);
+		}
+		else {
+			submenu.slideUp(500);
+		}
+	});
+
+	/*===== Submenu change image BEGIN =====*/
+	$('.sub_list a').hover(function() {
+		var path = $(this).data('path');
+		var right = $('.sub-menu .right img');
+		right.attr('src', path);
+	});
+	/*===== Submenu change image END =====*/
+
+
+	/*===== Main banner slider BEGIN =====*/
+	$('.main_banner_slider').slick({
+		prevArrow: '<div class="banner_arrow_prev"><img src="assets/images/slide-prev.svg"></div>',
+		nextArrow: '<div class="banner_arrow_next"><img src="assets/images/slide-next.svg"></div>',
+	});
+	/*===== Main banner slider END =====*/
+
+	/*===== Fancybox options BEGIN =====*/
+	$('[data-fancybox]').fancybox({
+		touch: false,
+	});
+
+	$('.popup_close').on('click', function() {
+		$.fancybox.close();
+	});
+
+	/*===== Fancybox options END =====*/
+
+
+	/*===== Fotorama for product single Options START =====*/
+	$('.product_single_fotorama').fotorama({
+		width: 450,
+		height: 381,
+		thumbwidth: '140px',
+		thumbheight: '118px',
+		thumbmargin: 15,
+		arrows: false,
+		allowfullscreen: true
+	});
+
+	$(document).on('mouseover', '.fotorama__nav__frame', function () {
+		var $fotoramaDiv = $(this).parents('.fotorama'),
+		fotoramaApi = $fotoramaDiv.data('fotorama');
+		fotoramaApi.show({
+			index: $('.fotorama__nav__frame', $fotoramaDiv).index(this)
+		});
+	});
+	/*===== Fotorama for product single Options END =====*/
+
+	/*===== Multiselect init BEGIN =====*/
+	$('.multi_select').multiselect();
+	var multiselectList = $('.multiselect-list');
+	var multiselectDiv = $('.multiselect-input-div input');
+
+	multiselectDiv.on('click', function (e){
+		var multiselectArrow = $(this).parent().find('.multiselect-dropdown-arrow');
+		if (multiselectList.is(':visible')) {
+			multiselectArrow.addClass('multiselect-arrow-active');
+		}
+
+		$(document).on('click', function(e) {
+			var multiselectArrow = $(this).parent().find('.multiselect-dropdown-arrow');
+
+			
+			if (!multiselectDiv.is(e.target) && multiselectDiv.is(e.target) == 0) {
+				var multiselectArrow = $('.multiselect-dropdown-arrow');
+				multiselectArrow.removeClass('multiselect-arrow-active');
 			}
-		]
+		});
 	});
+	/*===== Multiselect init END =====*/
 
-	lc_lightbox('.works-slider__img-item', {
-		fullscreen: true,
-		thumbs_nav: false
-	});
-
-	$('.scroll-up').on('click', function() {
-		$('html').animate({
-			scrollTop: 0
-		}, 1000);
-	});
 });

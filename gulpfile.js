@@ -51,10 +51,13 @@ gulp.task('codeReload', function() {
 /******** JS mix ********/
 var scriptsPath = [
 		'app/assets/js/jquery.min.js',
-		'app/assets/js/slick.min.js',
-		'app/assets/js/lc_lightbox.lite.min.js',
+		'app/assets/js/popper.min.js',
+		'app/assets/js/bootstrap.min.js',
 		'app/assets/js/jquery.inputmask.min.js',
-		'app/assets/js/script.js',
+		'app/assets/js/slick.min.js',
+		'app/assets/js/jquery.fancybox.min.js',
+		'app/assets/js/fotorama.js',
+		'app/assets/js/multiselect.min.js',
 ];
 
 gulp.task('scripts', () => {
@@ -138,13 +141,17 @@ gulp.task('build', done => {
 	var buildPHP = gulp.src('app/*.php')
 		.pipe(gulp.dest('dist'));
 
+	var buildTXT = gulp.src('app/*.txt')
+		.pipe(gulp.dest('dist'));
+
 	done();
 })
 /******** /Build ********/
 
 gulp.task('start', gulp.series('serve', 'css-libs', 'scripts'));
-gulp.task('done', gulp.series('clean', 'build', 'sass', 'scripts', 'img'));
 gulp.task('libs', gulp.series('css-libs', 'scripts'));
+gulp.task('done', gulp.series('clean', 'build', 'sass', 'libs', 'img'));
+
 
 
 gulp.task('fa-min', function () {
