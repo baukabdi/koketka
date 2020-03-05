@@ -5,7 +5,15 @@ body
 
 a
 	color: inherit
-	
+
+h2
+	font-family: $medium
+	font-style: normal
+	font-weight: 500
+	font-size: 24px
+	line-height: 31px
+	text-transform: uppercase
+
 .aic
 	align-items: center
 
@@ -56,9 +64,28 @@ a
 	font-size: 40px
 	font-family: $medium
 
-h2
-	font-size: 38px
+.currency
+	color: $text
+	font-family: $medium
+	text-transform: uppercase
+	font-size: 24px
 
+.slick-dots
+	display: flex
+	justify-content: center
+	margin: 0 auto
+	padding: 0
+	li
+		width: 12px
+		height: 12px
+		border-radius: 50%
+		background-color: #C09D84 !important
+		background-image: none !important
+		cursor: pointer
+	.slick-active
+		background-color: #67432B !important
+	button
+		display: none
 
 .sidebar_title
 	font-size: 18px
@@ -295,6 +322,7 @@ h2
 .multiselect-wrapper
 	width: 100%
 	position: relative
+	z-index: 2
 	.multiselect-input-div
 		border: 1px solid $border
 		border-radius: 5px
@@ -302,6 +330,7 @@ h2
 		display: flex
 		align-items: center
 		justify-content: space-between
+		overflow: hidden
 	.multiselect-input
 		border-radius: 5px
 		background: none
@@ -329,6 +358,8 @@ h2
 				background-color: darken(#fff, 5)
 				color: #000
 
+.in_stock
+	color: $green
 
 .multiselect-dropdown-arrow
 	border: none
@@ -381,3 +412,33 @@ input[type="number"]
 		appearance: none
 		-webkit-appearance: none
 		-moz-appearance: none
+
+.quantity
+	.quantity_number
+		position: relative
+	input
+		outline: none
+	.spin_down,
+	.spin_up
+		z-index: 1
+		cursor: pointer
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 28px
+		font-family: $bold
+		background: $gradient
+		color: #fff
+		width: 33px
+		height: 33px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		border-radius: 5px
+		user-select: none
+	.spin_down
+		left: 10px
+		padding-bottom: 4px
+	.spin_up
+		right: 10px

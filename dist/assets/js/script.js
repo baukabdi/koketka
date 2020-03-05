@@ -102,4 +102,21 @@ $(document).ready(function() {
 	});
 	/*===== Multiselect init END =====*/
 
+
+	/*===== Quantity BEGIN =====*/ 
+	var numValue = $('.quantity_number input[type="number"]');
+	var numUp = $('.quantity_number .spin_up');
+	var numDown = $('.quantity_number .spin_down');
+
+	numUp.on('click', function(e) {
+		e.preventDefault();
+		this.parentNode.querySelector('input[type=number]').stepUp();
+	})
+
+	numDown.on('click', function(e) {
+		e.preventDefault();
+		this.parentNode.querySelector('input[type=number]').stepDown();
+	})
+	/*===== Quantity END =====*/ 
+
 });

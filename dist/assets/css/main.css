@@ -366,6 +366,7 @@ h2 {
 .multiselect-wrapper {
   width: 100%;
   position: relative;
+  z-index: 2;
 }
 
 .multiselect-wrapper .multiselect-input-div {
@@ -410,6 +411,10 @@ h2 {
 .multiselect-wrapper ul li:hover {
   background-color: #f2f2f2;
   color: #000;
+}
+
+.in_stock {
+  color: #219653;
 }
 
 .multiselect-dropdown-arrow {
@@ -464,6 +469,44 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.quantity .quantity_number {
+  position: relative;
+}
+
+.quantity input {
+  outline: none;
+}
+
+.quantity .spin_down,
+.quantity .spin_up {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  font-family: "Stem-Bold";
+  background: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
+  color: #fff;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.quantity .spin_down {
+  left: 10px;
+  padding-bottom: 4px;
+}
+
+.quantity .spin_up {
+  right: 10px;
 }
 
 /*===== Stem Light =====*/
@@ -659,11 +702,11 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   font-family: "Stem-Light";
 }
 
-.header .header_phone .p_item p {
+.header .header_phone .p_item a {
   white-space: nowrap;
 }
 
-.header .header_phone .p_item p:nth-last-child(n+2) {
+.header .header_phone .p_item a:nth-last-child(n+2) {
   margin-right: 12px;
 }
 
@@ -1281,11 +1324,16 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   font-family: "Stem-Regular";
 }
 
-.s-product_single .select_wrap .count_item {
+.s-product_single .select_wrap .quantity {
   max-width: 160px;
   width: 100%;
   margin-right: 35px;
   margin-bottom: 22px;
+}
+
+.s-product_single .select_wrap .in_stock {
+  margin-top: 10px;
+  font-family: "Roboto-Regular";
 }
 
 .footer {

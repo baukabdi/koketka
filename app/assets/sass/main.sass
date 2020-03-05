@@ -29,7 +29,7 @@
 		transition: 0.3s ease-out
 		top: 12rem
 		right: 25px
-		z-index: 12
+		z-index: 2
 		&:hover
 			background-color: $accent
 		a
@@ -110,7 +110,7 @@
 			display: flex
 			flex-wrap: wrap
 			font-family: $light
-			p
+			a
 				white-space: nowrap
 				&:nth-last-child(n+2)
 					margin-right: 12px
@@ -357,6 +357,7 @@
 					&:target
 						background-image: none
 			li
+				list-style-type: none
 				a
 					font-family: $regular
 					color: $accent
@@ -543,7 +544,7 @@
 .s-product_single
 	display: flex
 	.left
-		width: 30%
+
 		margin-right: 22px
 		position: relative
 	.product_single_fotorama 
@@ -566,7 +567,7 @@
 	.ball
 		position: absolute
 		top: 16px
-		right: 20px
+		left: 19.5rem
 		background-color: $blue
 		font-family: $roboto
 		font-weight: 700
@@ -593,7 +594,7 @@
 		align-items: center
 		max-width: 400px
 		.select_item
-			max-width: 160px
+			max-width: $input-width
 			width: 100%
 			margin-right: 35px
 			margin-bottom: 22px
@@ -602,7 +603,7 @@
 				margin-bottom: 5px
 				display: block
 		.button_buy
-			max-width: 160px
+			max-width: $input-width
 			width: 100%
 			height: 50px
 			display: flex
@@ -614,11 +615,78 @@
 			font-size: 24px
 			font-family: $regular
 
-		.count_item
-			max-width: 160px
+		.quantity
+			max-width: $input-width
 			width: 100%
 			margin-right: 35px
 			margin-bottom: 22px
+			position: relative
+
+		.in_stock
+			margin-top: 10px
+			font-family: $roboto
+			position: absolute
+			top: 100%
+
+	.nav-tabs
+		margin-top: 50px
+		padding-top: 30px
+		font-size: 18px
+		.nav-item
+			a
+				color: rgba(0, 0, 0, 0.5)
+				&:hover
+					color: $dark
+			.active
+				color: $dark
+	.tab-content
+		padding-top: 30px
+		font-size: 18px
+
+.related_products
+	h2
+		margin-bottom: 20px
+	.currency
+		position: absolute
+		top: 25px
+		left: 25px
+
+.related_products_slider
+	li
+		margin-right: 25px
+
+
+/**** Products Single Responsive ****/
+@media screen and(max-width: 1200px)
+	.s-product_single
+		flex-direction: column
+		.left
+			width: 100%
+		.right
+			width: 100%
+
+@media screen and(max-width: 575px)
+	.bread_crumbs
+		ul
+			flex-direction: column
+
+
+@media screen and(max-width: 420px)
+	.s-product_single 
+		.select_wrap
+			flex-direction: column
+			align-items: flex-start
+			.select_item
+				max-width: none
+			.quantity
+				max-width: none
+			.in_stock
+				position: static
+	.nav-tabs 
+		.nav-item
+			border: 1px solid $border
+			width: 100%
+			margin-bottom: 10px 
 //==== Products Single END ====//
 
 

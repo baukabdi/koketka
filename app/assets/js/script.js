@@ -62,7 +62,6 @@ $(document).ready(function() {
 	/*===== Fotorama for product single Options START =====*/
 	$('.product_single_fotorama').fotorama({
 		width: 450,
-		height: 381,
 		thumbwidth: '140px',
 		thumbheight: '118px',
 		thumbmargin: 15,
@@ -101,5 +100,47 @@ $(document).ready(function() {
 		});
 	});
 	/*===== Multiselect init END =====*/
+
+
+	/*===== Quantity BEGIN =====*/ 
+	var numValue = $('.quantity_number input[type="number"]');
+	var numUp = $('.quantity_number .spin_up');
+	var numDown = $('.quantity_number .spin_down');
+
+	numUp.on('click', function(e) {
+		e.preventDefault();
+		this.parentNode.querySelector('input[type=number]').stepUp();
+	})
+
+	numDown.on('click', function(e) {
+		e.preventDefault();
+		this.parentNode.querySelector('input[type=number]').stepDown();
+	})
+	/*===== Quantity END =====*/
+
+
+	/*===== Related Slider BEGIN =====*/
+	var relatedItem = $('.related_products_slider li');
+	if (relatedItem.length > 3) {
+		$('.related_products_slider').slick({
+			slidesToShow: 3,
+			arrows: false,
+			dots: true,
+			autoplay: true,
+
+			responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2
+					},
+					breackpoint: 650,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+		});
+	}
+	/*===== Related Slider END =====*/
+	
 
 });

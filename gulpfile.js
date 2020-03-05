@@ -15,10 +15,8 @@ const gulp = require('gulp'),
 gulp.task('serve', function () {
 
 	browserSync({
-		//proxy: 'koketka',
-		server: {
-			baseDir: 'app',
-			},		
+		proxy: 'koketka',
+		//server: { baseDir: 'app' },		
 		notify: false,
 		open: true,
 		tunnel: false,
