@@ -2,6 +2,7 @@
 
 body
 	font-family: $def-font
+	overflow-x: hidden
 
 a
 	color: inherit
@@ -269,7 +270,7 @@ h3
 
 
 .bread_crumbs
-	margin-bottom: 35px
+	margin: 30px 0
 	ul
 		display: flex
 		list-style-type: none
@@ -452,3 +453,84 @@ input[type="number"]
 		padding-bottom: 4px
 	.spin_up
 		right: 10px
+
+
+
+.currency
+	position: absolute
+	top: 25px
+	left: 25px
+	del
+		font-size: 14px
+		color: $accent
+		display: block
+		text-align: left
+
+
+.products_filter
+	color: $accent
+	font-size: 18px
+	display: flex
+	justify-content: space-between
+	.filter_button
+		color: $text
+		font-size: 20px
+		display: flex
+		align-items: center
+		img
+			margin-right: 10px
+		&:hover
+			color: $text
+			text-decoration: none
+
+	.filter_show
+		width: 90%
+		.select_wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+			>
+				div
+					width: 33.3%
+		.select_item
+			display: flex
+			align-items: center
+			label
+				margin-right: 15px
+				margin-bottom: 0
+		.multiselect-wrapper
+			color: #000
+
+	.price_item
+		display: flex
+		align-items: center
+		label
+			margin-bottom: 0
+			margin-right: 20px
+
+.asRange
+	height: 2px
+	background-color: rgba(0, 0, 0, 0.25)
+	max-width: 381px
+	width: 100%
+	.asRange-selected
+		background-color: $accent
+		height: 7px
+		top: -120%
+	.asRange-pointer
+		top: -120%
+		&::before
+			background-color: $accent
+		&::after
+			display: none
+		.asRange-tip
+			top: auto
+			bottom: -25px
+			background: none
+			border: none
+			color: $accent
+			font-family: $roboto
+			font-size: 18px
+			&::before,
+			&::after
+				display: none

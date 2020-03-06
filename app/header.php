@@ -11,17 +11,19 @@
  	<link rel="stylesheet" href="assets/css/libs.min.css"> -->
 	
 	<!--- Библиотеки CSS / Удалить после сборки -->
- 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
- 	<link rel="stylesheet" href="assets/css/normalize.css">
- 	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
- 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
- 	<link rel="stylesheet" href="assets/css/slick.css">
- 	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
- 	<link rel="stylesheet" href="assets/css/fotorama.css">
- 	<link rel="stylesheet" href="assets/css/multiselect.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/fotorama.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/multiselect.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/wrunner-default-theme.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/asRange.min.css">
 	
 	<!--- Кастомные стили / Оставить -->
- 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
  </head>
 
  <body>
@@ -137,10 +139,10 @@
 
 					<div class="header_right">
 						<div class="header_contacts">
-							<div class="header_social">
-								<a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<a href="#0"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-							</div>
+							<ul class="header_social">
+								<li><a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#0"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							</ul>
 
 							<div class="header_phone">
 								<p class="p_title">Телефони</p>

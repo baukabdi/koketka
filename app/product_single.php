@@ -15,11 +15,11 @@
  						<nav class="bread_crumbs">
  							<ul>
  								<li><a href="#0">Начало</a></li>
- 								<span>/</span>
+ 								<li>/</li>
  								<li><a href="#0">Козметика PURE PAWS</a></li>
- 								<span>/</span>
+ 								<li>/</li>
  								<li><a href="#0">Изложбена козметика</a></li>
- 								<span>/</span>
+ 								<li>/</li>
  								<li class="bread_crumb_currency"><a href="#">ХИДРАТИРАЩ СПРЕЙ СКРЕЖ И СНЕЖИНКИ</a></li>
  							</ul>
  						</nav>

@@ -141,6 +141,14 @@ $(document).ready(function() {
 		});
 	}
 	/*===== Related Slider END =====*/
-	
 
+	$(".price_range").asRange({
+		range: true,
+    limit: false,
+		min: 20,
+		max: 8000,
+		value: 50
+
+	});
+	
 });
