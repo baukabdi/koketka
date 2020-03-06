@@ -44,6 +44,7 @@
  				<button>Отправить</button>
  			</div>
 
+
  			<div class="popup_close">
  				<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
  					<line x1="18" y1="3.53553" x2="4.53553" y2="17" stroke="white" stroke-width="5" stroke-linecap="round"/>
@@ -101,6 +102,7 @@
  				<button>Зарегистрироваться</button>
  			</div>
 
+
  			<div class="popup_close">
  				<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
  					<line x1="18" y1="3.53553" x2="4.53553" y2="17" stroke="white" stroke-width="5" stroke-linecap="round"/>
@@ -121,6 +123,7 @@
 					</a>
 				</div>
 
+
 				<div class="header_row">
 					<div class="header_logo">
 						<a href="index.php"><img src="assets/images/logo.svg" alt="Koketka"></a>
@@ -137,12 +140,14 @@
 						</form>
 					</div>
 
+
 					<div class="header_right">
 						<div class="header_contacts">
 							<ul class="header_social">
 								<li><a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 								<li><a href="#0"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							</ul>
+
 
 							<div class="header_phone">
 								<p class="p_title">Телефони</p>
@@ -153,6 +158,7 @@
 							</div>
 						</div>
 
+
 						<div class="cart_button">
 							<a href="#0">
 								<img src="assets/images/shopping-cart.svg" alt="Koketka">
@@ -160,6 +166,7 @@
 							</a>
 							<span class="cart_quantity">1</span>
 						</div>
+
 
 						<div class="sign-up_in">
 							<a href="#" data-fancybox data-src="#sign_up" class="sign_up">
@@ -170,20 +177,24 @@
 							</a>
 						</div>
 
+
 						<div class="times_button">
 							<i class="fa fa-times" aria-hidden="true"></i>
 						</div>
 					</div>
 
+
 					<div class="search_button">
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</div>
 
+					
 					<div class="hamburger_button">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</div>
 				</div>
 
+				
 			</div>
 		</header>
  	<!-- Header END -->

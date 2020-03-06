@@ -38,8 +38,8 @@
  								<div class="footer_social">
  									<h5>Мы в соц. сетях</h5>
  									<ul class="social_custom">
- 										<a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
- 										<a href="#0"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+ 										<li><a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+ 										<li><a href="#0"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
  									</ul>
  								</div>
  							</div>
@@ -68,7 +68,7 @@ header end -->
 <script src="assets/js/jquery.fancybox.min.js"></script>
 <script src="assets/js/fotorama.js"></script>
 <script src="assets/js/multiselect.min.js"></script>
-
+<script src="assets/js/jquery-asRange.min.js"></script>
 <!--- Кастомные скрипты / Оставить
 ======================================= -->
 <script src="assets/js/script.js"></script>

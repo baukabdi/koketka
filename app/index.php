@@ -18,7 +18,7 @@
  							<div class="main_banner_slider">
  								<!-- Slide BEGIN -->
  								<div class="banner_item" style="background-image: url(assets/images/banner.jpg);">
- 									<h1 class="accent_title">
+ 									<h1>
  										ТЕНИСКА С ЯКА 16.00 лв.
  										<del>
  											<span>
@@ -33,7 +33,7 @@
 
  								<!-- Slide BEGIN -->
  								<div class="banner_item" style="background-image: url(assets/images/banner.jpg);">
- 									<h1 class="accent_title">
+ 									<h1>
  										ТЕНИСКА С ЯКА 16.00 лв.
  										<del>
  											<span>
@@ -48,7 +48,7 @@
 
  								<!-- Slide BEGIN -->
  								<div class="banner_item" style="background-image: url(assets/images/banner.jpg);">
- 									<h1 class="accent_title">
+ 									<h1>
  										ТЕНИСКА С ЯКА 16.00 лв.
  										<del>
  											<span>

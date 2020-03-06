@@ -1242,10 +1242,13 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   right: -50px;
 }
 
-.main_banner .accent_title {
+.main_banner h1 {
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
+  color: #FF96A9;
+  font-size: 40px;
+  font-family: "Stem-Medium";
 }
 
 .main_banner p {
