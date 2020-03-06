@@ -312,7 +312,7 @@ h3
 		appearance: none
 		-webkit-appearance: none
 		-moz-appearance: none
-		width: 20px
+		width: 20px !important
 		height: 20px
 		border: 1px solid #000
 		position: relative
@@ -485,6 +485,7 @@ input[type="number"]
 
 	.filter_show
 		width: 90%
+		display: none
 		.select_wrap
 			display: flex
 			align-items: center
@@ -498,9 +499,16 @@ input[type="number"]
 			label
 				margin-right: 15px
 				margin-bottom: 0
+		.select_size
+			width: 25% !important
+		.select_manufacturer
+			width: 38% !important
 		.multiselect-wrapper
 			color: #000
-
+			input
+				width: 100%
+	.filter_show_active
+		display: block
 	.price_item
 		display: flex
 		align-items: center
@@ -534,3 +542,11 @@ input[type="number"]
 			&::before,
 			&::after
 				display: none
+
+
+@media screen and(max-width: 1200px)
+	.s-products
+		.filter_button
+			margin-bottom: 20px
+		.products_filter
+			flex-direction: column

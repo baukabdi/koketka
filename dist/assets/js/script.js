@@ -148,7 +148,20 @@ $(document).ready(function() {
 		min: 20,
 		max: 8000,
 		value: 50
-
 	});
+
+
+	/*===== Filter toggle BEGIN =====*/
+	$('.filter_button').on('click', function(e) {
+		e.preventDefault();
+		var filterShow = $('.filter_show');
+		if(!filterShow.hasClass('filter_show_active')) {
+			filterShow.addClass('filter_show_active');
+		}
+		else {
+			filterShow.removeClass('filter_show_active');
+		}
+	});
+	/*===== Filter toggle END =====*/
 	
 });

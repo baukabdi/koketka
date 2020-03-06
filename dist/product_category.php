@@ -1,7 +1,8 @@
 <?php include('header.php'); ?>
 
+<!-- quos ego BEGIN -->
 <main>
-	<!-- Main Top START  -->
+	<!-- Main Top BEGIN  -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 col-md-3 col-lg-2">
@@ -209,5 +210,6 @@
 	</div>
 	<!-- Main Top END -->
 </main>
+<!-- quos ego END -->
 
 <?php include('footer.php'); ?>
