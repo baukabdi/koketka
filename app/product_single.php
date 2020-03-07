@@ -15,7 +15,7 @@
 				<!-- Bread Crumbs START -->
 				<nav class="bread_crumbs">
 					<ul>
-						<li><a href="#0">Начало</a></li>
+						<li><a href="index.php">Начало</a></li>
 						<li>/</li>
 						<li><a href="#0">Козметика PURE PAWS</a></li>
 						<li>/</li>
@@ -25,6 +25,7 @@
 					</ul>
 				</nav>
 				<!-- Bread Crumbs END -->
+
 
 
 				<section class="s-product_single">
@@ -120,47 +121,61 @@
 					<ul class="products_row related_products_slider">
 
 						<li class="products_item">
-							<div class="currency">51.00 лв.</div>
 							<a href="product_single.php">
+								<span class="favourite onsale">
+									<img src="assets/images/favourite.png" alt="Koketka">
+								</span>
 								<img src="assets/images/product-3.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">КОПРИНЕН КРЕМ БАЛСАМ</h2>
-							</div>
-							<div class="favourite">
-								<img src="assets/images/favourite.png" alt="Koketka">
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
 						</li>
 
 						<li class="products_item">
-							<div class="currency">51.00 лв.</div>
 							<a href="product_single.php">
+								<span class="favourite onsale">
+									<img src="assets/images/favourite.png" alt="Koketka">
+								</span>
 								<img src="assets/images/product-4.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">ПАКЕТ ЗА ОБЕМ 2</h2>
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
 						</li>
 
 						<li class="products_item">
-							<div class="currency">51.00 лв.</div>
 							<a href="product_single.php">
+								<span class="favourite onsale">
+									<img src="assets/images/favourite.png" alt="Koketka">
+								</span>
 								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+								<h2 class="woocommerce-loop-product__title">ПАКЕТ ЗА ОБЕМ 2</h2>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
 							</a>
-							<div class="bottom">
-								<h2 class="woocommerce-loop-product__title">ЛЮБИМИ ОЧИЧКИ</h2>
-							</div>
 						</li>
 
 						<li class="products_item">
-							<div class="currency">51.00 лв.</div>
 							<a href="product_single.php">
+								<span class="favourite onsale">
+									<img src="assets/images/favourite.png" alt="Koketka">
+								</span>
 								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+								<h2 class="woocommerce-loop-product__title">ПАКЕТ ЗА ОБЕМ 2</h2>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
 							</a>
-							<div class="bottom">
-								<h2 class="woocommerce-loop-product__title">ЛЮБИМИ ОЧИЧКИ</h2>
-							</div>
 						</li>
+
 					</ul>
 				</section>
 			</div>

@@ -107,8 +107,9 @@ h3 {
 }
 
 .slick-dots li {
-  width: 12px;
-  height: 12px;
+  width: 12px !important;
+  height: 12px !important;
+  margin-right: 13px;
   border-radius: 50%;
   background-color: #C09D84 !important;
   background-image: none !important;
@@ -696,6 +697,15 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   .s-products .products_filter {
     flex-direction: column;
   }
+}
+
+.ball {
+  background-color: #2D9CDB;
+  font-family: "Roboto-Regular";
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 30px;
 }
 
 /*===== Stem Light =====*/
@@ -1342,7 +1352,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
 }
 
 .s-products .products_row li {
-  padding: 20px 20px 0 0;
   background: linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 50%, #EBEBEB 100%);
   border-radius: 20px;
   width: 32.3%;
@@ -1352,8 +1361,14 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   text-align: center;
 }
 
+.s-products .products_row li a {
+  text-decoration: none;
+  display: block;
+}
+
 .s-products .products_row img {
-  height: 300px;
+  height: 260px;
+  margin: 0 auto;
 }
 
 .s-products .products_row a {
@@ -1365,6 +1380,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   font-size: 20px;
   font-family: "Stem-Regular";
   text-align: left;
+  padding-left: 25px;
+  padding-bottom: 25px;
 }
 
 .s-products .products_row .product_type_simple {
@@ -1377,8 +1394,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   text-align: center;
   border-radius: 30px;
   outline: none;
-  font-family: "Stem-Bold";
-  position: relative;
+  font-family: "Stem-Regular";
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
   overflow: hidden;
   display: block;
   color: #fff;
@@ -1591,10 +1610,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   position: absolute;
   top: 25px;
   left: 25px;
-}
-
-.related_products_slider li {
-  margin-right: 25px;
 }
 
 /**** Products Single Responsive ****/

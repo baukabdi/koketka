@@ -69,70 +69,100 @@
 						<li class="products_item">
 							<a href="product_single.php">
 								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">Дрехи</h2>
-								<a href="product_single.php" class="button product_type_simple">Подробнее</a>
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple">
+								Подробнее
+							</a>
 						</li>
 
 						<li class="products_item">
 							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-2.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">РАЗПРОДАЖБА</h2>
-								<a href="product_single.php" class="button product_type_simple">Подробнее</a>
-							</div>
-							<div class="favourite">
-								<img src="assets/images/favourite.png" alt="">
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple">
+								Подробнее
+							</a>
 						</li>
 
 						<li class="products_item">
 							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-3.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">Козметика PURE PAWS</h2>
-								<a href="product_single.php" class="button product_type_simple">Подробнее</a>
-							</div>
-							<div class="favourite">
-								<img src="assets/images/favourite.png" alt="">
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple">
+								Подробнее
+							</a>
 						</li>
 
 						<li class="products_item">
 							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-4.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">Легла</h2>
-								<a href="product_single.php" class="button product_type_simple">Подробнее</a>
-							</div>
-							<div class="favourite">
-								<img src="assets/images/favourite.png" alt="">
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple">
+								Подробнее
+							</a>
 						</li>
 
 						<li class="products_item">
 							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-5.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">Нагръдници и каишки</h2>
-								<a href="product_single.php" class="button product_type_simple">Подробнее</a>
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple">
+								Подробнее
+							</a>
 						</li>
 
 						<li class="products_item">
 							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-6.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-							</a>
-							<div class="bottom">
 								<h2 class="woocommerce-loop-product__title">Обувки и чорапи</h2>
-								<a href="product_single.php" class="button product_type_simple">Подробнее</a>
-							</div>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple">
+								Подробнее
+							</a>
 						</li>
 					</ul>
 				</section>

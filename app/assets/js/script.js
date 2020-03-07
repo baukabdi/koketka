@@ -62,6 +62,7 @@ $(document).ready(function() {
 	/*===== Fotorama for product single Options START =====*/
 	$('.product_single_fotorama').fotorama({
 		width: 450,
+		thumbs: false,
 		thumbwidth: '140px',
 		thumbheight: '118px',
 		thumbmargin: 15,
@@ -122,6 +123,7 @@ $(document).ready(function() {
 	/*===== Related Slider BEGIN =====*/
 	var relatedItem = $('.related_products_slider li');
 	if (relatedItem.length > 3) {
+		relatedItem.css('margin-right', '30px');
 		$('.related_products_slider').slick({
 			slidesToShow: 3,
 			arrows: false,

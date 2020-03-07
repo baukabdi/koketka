@@ -160,7 +160,7 @@
 
 
 						<div class="cart_button">
-							<a href="#0">
+							<a href="shopping_cart.php">
 								<img src="assets/images/shopping-cart.svg" alt="Koketka">
 								<span>Корзина</span>
 							</a>
