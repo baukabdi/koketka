@@ -165,4 +165,9 @@ $(document).ready(function() {
 	});
 	/*===== Filter toggle END =====*/
 	
+
+
+	/*===== Select picker =====*/
+	$('select').not('.multi_select').selectpicker();
+
 });

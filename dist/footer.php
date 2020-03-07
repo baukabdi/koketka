@@ -63,6 +63,7 @@ header end -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
 <script src="assets/js/jquery.inputmask.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>

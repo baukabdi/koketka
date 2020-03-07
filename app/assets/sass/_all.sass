@@ -122,6 +122,15 @@ h3
 		&:hover
 			color: $text
 
+
+input,
+textarea
+	padding: 10px
+	border: 1px solid $border
+	border-radius: 5px
+	width: 100%
+
+
 /*===== Fancybox reset =====*/
 .fancybox-content
 	padding: 0
@@ -228,12 +237,12 @@ h3
 		margin-bottom: 25px
 		display: flex
 
-	.required
-		&::after
-			content: '*'
-			display: inline
-			color: $red
-			margin-left: 6px
+.required
+	&::after
+		content: '*'
+		display: inline
+		color: $red
+		margin-left: 6px
 
 .fancybox-image
 	overflow: hidden
@@ -319,6 +328,7 @@ h3
 		width: 20px !important
 		height: 20px
 		border: 1px solid #000
+		border-radius: 0
 		position: relative
 		margin-right: 10px !important
 		&:checked
@@ -565,3 +575,97 @@ input[type="number"]
 	color: #fff
 	padding: 8px 15px
 	border-radius: 30px
+
+
+.bootstrap-select
+	width: 100% !important
+	button
+		width: 100%
+		outline: none !important
+	> 
+		.dropdown-toggle
+			background-color: #fff
+			border: 1px solid $border
+			outline: none !important
+			&::after
+				content: url('../images/triangle-white.svg')
+				display: flex
+				justify-content: center
+				align-items: center
+				background-image: $gradient
+				border: none
+				width: 38px
+				height: 33px
+				border-radius: 5px
+		.dropdown-toggle_active
+			&::after
+				border-radius: 50%
+.bootstrap-select 
+	.dropdown-menu
+		padding: 0
+		li
+			a
+				padding: 10px 20px
+				&:focus
+					background-image: $gradient
+			.active
+				background-image: $gradient
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle
+	background-color: #fff
+	outline: none !important
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle
+	outline: none !important
+
+.address_edit_popup
+	padding: 26px 0
+	max-width: 782px
+	width: 100%
+	border-radius: $bd-radius
+	.popup_row
+		padding: 0 36px
+		display: flex
+		justify-content: center
+	.left
+		margin-right: 42px
+		width: 50%
+	.right
+		width: 50%
+	label
+		display: block
+	.button_custom
+		color: #fff
+		font-family: $regular
+		font-size: 14px
+		padding: 20px 0
+		text-align: center
+		margin: 0 auto
+		display: block
+		max-width: 160px
+	.h-gutter
+		margin-bottom: 25px
+	.street_home
+		display: flex
+		.input_custom
+			width: 50%
+			&:first-child
+				margin-right: 28px
+
+@media screen and(max-width: 768px)
+	.address_edit_popup 
+		.popup_row
+			flex-direction: column
+		.left,
+		.right
+			width: 100%
+
+@media screen and(max-width: 480px)
+	.address_edit_popup
+		.popup_row
+			padding: 0 25px
+		.street_home
+			flex-direction: column
+			.input_custom
+				width: 100%
+				margin-right: 0 !important

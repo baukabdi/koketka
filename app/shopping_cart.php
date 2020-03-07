@@ -118,13 +118,55 @@
 					</form>
 
 					<div class="cart_totals">
-						<table class="shop_table shop_table_responsive" cellspacing="0">
+						<table class="shop_table shop_table_responsive">
 							<tbody>
 								<tr class="cart-subtotal">
 									<td>
 										<h3 class="delivery_title">Доставка с M&BM Express</h3>
 										<p class="delivery_p">бул. „Чаталджа“ 19, 9002 Варна Център, <br> Варна, Болгария</p>
-										<a class="delivery_edit_address" href="#0">Редактировать адрес доставки</a>
+										<a class="delivery_edit_address" href="#0" data-fancybox data-src="#address_edit_popup">Редактировать адрес доставки</a>
+
+										<div class="address_edit_popup" style="display: none;" id="address_edit_popup">
+											<div class="popup_row">
+												<div class="left">
+													<div class="country_wrap h-gutter">
+														<label class="required" for="select-country">Страна</label>
+														<select class="select_custom bootstrap-select" id="select-country">
+															<option>Россия</option>
+															<option>Россия</option>
+															<option>Россия</option>
+															<option>Россия</option>
+														</select>
+													</div>
+
+													<div class="street_home">
+														<div class="input_custom h-gutter">
+															<label for="street" class="required">Улица</label>
+															<input type="text" id="street">
+														</div>
+														<div class="input_custom h-gutter">
+															<label for="home" class="required">Дом</label>
+															<input type="text" id="home">
+														</div>
+													</div>
+												</div>
+
+
+												<div class="right">
+													<div class="city_phone">
+														<div class="input_custom h-gutter">
+															<label for="city" class="required">Город</label>
+															<input type="text" id="city">
+														</div>
+														<div class="input_custom h-gutter">
+															<label for="phone" class="required">Телефон</label>
+															<input type="text" id="phone">
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#0" class="button_custom">Добавить адрес</a>
+										</div>
 									</td>
 
 									<td>

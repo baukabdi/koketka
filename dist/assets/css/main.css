@@ -154,6 +154,14 @@ h3 {
   color: #67432B;
 }
 
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  width: 100%;
+}
+
 /*===== Fancybox reset =====*/
 .fancybox-content {
   padding: 0;
@@ -286,7 +294,7 @@ h3 {
   display: flex;
 }
 
-.form_custom .required::after {
+.required::after {
   content: '*';
   display: inline;
   color: #EB5757;
@@ -397,6 +405,7 @@ h3 {
   width: 20px !important;
   height: 20px;
   border: 1px solid #000;
+  border-radius: 0;
   position: relative;
   margin-right: 10px !important;
 }
@@ -711,6 +720,138 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-i
   color: #fff;
   padding: 8px 15px;
   border-radius: 30px;
+}
+
+.bootstrap-select {
+  width: 100% !important;
+}
+
+.bootstrap-select button {
+  width: 100%;
+  outline: none !important;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  outline: none !important;
+}
+
+.bootstrap-select > .dropdown-toggle::after {
+  content: url("../images/triangle-white.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
+  border: none;
+  width: 38px;
+  height: 33px;
+  border-radius: 5px;
+}
+
+.bootstrap-select > .dropdown-toggle_active::after {
+  border-radius: 50%;
+}
+
+.bootstrap-select .dropdown-menu {
+  padding: 0;
+}
+
+.bootstrap-select .dropdown-menu li a {
+  padding: 10px 20px;
+}
+
+.bootstrap-select .dropdown-menu li a:focus {
+  background-image: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
+}
+
+.bootstrap-select .dropdown-menu li .active {
+  background-image: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  background-color: #fff;
+  outline: none !important;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  outline: none !important;
+}
+
+.address_edit_popup {
+  padding: 26px 0;
+  max-width: 782px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.address_edit_popup .popup_row {
+  padding: 0 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.address_edit_popup .left {
+  margin-right: 42px;
+  width: 50%;
+}
+
+.address_edit_popup .right {
+  width: 50%;
+}
+
+.address_edit_popup label {
+  display: block;
+}
+
+.address_edit_popup .button_custom {
+  color: #fff;
+  font-family: "Stem-Regular";
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  max-width: 160px;
+}
+
+.address_edit_popup .h-gutter {
+  margin-bottom: 25px;
+}
+
+.address_edit_popup .street_home {
+  display: flex;
+}
+
+.address_edit_popup .street_home .input_custom {
+  width: 50%;
+}
+
+.address_edit_popup .street_home .input_custom:first-child {
+  margin-right: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .address_edit_popup .popup_row {
+    flex-direction: column;
+  }
+  .address_edit_popup .left,
+  .address_edit_popup .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .address_edit_popup .popup_row {
+    padding: 0 25px;
+  }
+  .address_edit_popup .street_home {
+    flex-direction: column;
+  }
+  .address_edit_popup .street_home .input_custom {
+    width: 100%;
+    margin-right: 0 !important;
+  }
 }
 
 /*===== Stem Light =====*/
