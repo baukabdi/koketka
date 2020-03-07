@@ -104,9 +104,8 @@ $(document).ready(function() {
 
 
 	/*===== Quantity BEGIN =====*/ 
-	var numValue = $('.quantity_number input[type="number"]');
-	var numUp = $('.quantity_number .spin_up');
-	var numDown = $('.quantity_number .spin_down');
+	var numUp = $('.spin_up');
+	var numDown = $('.spin_down');
 
 	numUp.on('click', function(e) {
 		e.preventDefault();

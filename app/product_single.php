@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="right">
-						<h2>НАГРЪДНИКЪ ПТАУН В</h2>
+						<h1 class="product_title">НАГРЪДНИКЪ ПТАУН В</h1>
 						<p class="price">49.00 лв</p>
 
 						<div class="select_wrap">
@@ -76,7 +76,7 @@
 
 							<div class="quantity">
 								<label for="quantity">Количество</label>
-								<div class="quantity_number">
+								<div class="quantity_item">
 									<span class="spin_down">-</span>
 									<input id="quantity" type="number" value="1" min="0" max="20">
 									<span class="spin_up">+</span>

@@ -24,18 +24,128 @@
 
 
 				<section class="s-shopping_cart">
-					<h1>Корзина</h1>
-					<div class="cart_wrapper">
-						<div class="cart_descr">
-							<div class="left">
-								<img src="assets/images/fotorama-1.png" alt="">
-								<span class="cart_zoom">
-									
-								</span>
-								<div class="ball">+10 баллов</div>
-							</div>
-						</div>
+
+					<h1 class="entry-title">Корзина</h1>
+					<form class="woocommerce-cart-form">
+						<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents">
+							<tbody>
+								<tr class="woocommerce-cart-form__cart-item cart_item">
+									<td class="product-thumbnail">
+										<a href="#0" data-fancybox data-src="assets/images/fotorama-1.png">
+											<img src="assets/images/fotorama-1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Koketka">
+										</a>
+										<span class="magnify">
+											<img src="assets/images/magnify.svg" alt="">
+										</span>
+										<span class="ball">
+											+10 баллов
+										</span>
+									</td>
+
+									<td class="product-name">
+										<a href="#0">ЛУКСОЗНА ЧАНТА 2</a>
+										<div class="product-price">
+											<span class="woocommerce-Price-amount amount">
+												<span class="woocommerce-Price-currencySymbol">лв.</span>49.00 лв.
+											</span>
+										</div>
+									</td>
+
+									<td class="product-quantity">
+										<div class="quantity">
+											<label class="screen-reader-text">Количество</label>
+											<div class="quantity_item">
+												<span class="spin_down">-</span>
+												<input type="number" class="input-text qty text" step="1" min="0" max="50" value="1">
+												<span class="spin_up">+</span>
+											</div>
+										</div>
+									</td>
+
+									<td class="product-subtotal">
+										<label class="screen-reader-text">Итого</label>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">лв.</span>
+											98.00 лв.
+											<a href="#0" class="remove">Удалить товар</a>
+										</span>
+									</td>
+								</tr>
+
+								<tr class="woocommerce-cart-form__cart-item cart_item">
+									<td class="product-thumbnail">
+										<a href="#0" data-fancybox data-src="assets/images/fotorama-1.png">
+											<img src="assets/images/fotorama-1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Koketka">
+										</a>
+										<span class="magnify">
+											<img src="assets/images/magnify.svg" alt="">
+										</span>
+										<span class="ball">
+											+10 баллов
+										</span>
+									</td>
+
+									<td class="product-name">
+										<a href="#0">ЛУКСОЗНА ЧАНТА 2</a>
+										<div class="product-price">
+											<span class="woocommerce-Price-amount amount">
+												<span class="woocommerce-Price-currencySymbol">лв.</span>49.00 лв.
+											</span>
+										</div>
+									</td>
+
+									<td class="product-quantity">
+										<div class="quantity">
+											<label class="screen-reader-text">Количество</label>
+											<div class="quantity_item">
+												<span class="spin_down">-</span>
+												<input type="number" class="input-text qty text" step="1" min="0" max="50" value="1">
+												<span class="spin_up">+</span>
+											</div>
+										</div>
+									</td>
+
+									<td class="product-subtotal">
+										<label class="screen-reader-text">Итого</label>
+										<span class="woocommerce-Price-amount amount">
+											49.00 лв.
+										</span>
+										<a href="#0" class="remove">Удалить товар</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+
+					<div class="cart_totals">
+						<table class="shop_table shop_table_responsive" cellspacing="0">
+							<tbody>
+								<tr class="cart-subtotal">
+									<td>
+										<h3 class="delivery_title">Доставка с M&BM Express</h3>
+										<p class="delivery_p">бул. „Чаталджа“ 19, 9002 Варна Център, <br> Варна, Болгария</p>
+										<a class="delivery_edit_address" href="#0">Редактировать адрес доставки</a>
+									</td>
+
+									<td>
+										<label class="screen-reader-text">ДОСТАВКА</label>
+										<span class="woocommerce-Price-amount amount">49.00 лв.</span>
+									</td>
+
+									<td class="order-total">
+										<label class="screen-reader-text">ИТОГО</label>
+										<span class="woocommerce-Price-amount amount">151.00 лв.</span>
+										<div class="wc-proceed-to-checkout">
+											<a href="#0" class="checkout-button button alt wc-forward button_custom">
+												Оформить товар
+											</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
+
 				</section>
 			</div>
 		</div>
