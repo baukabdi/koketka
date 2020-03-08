@@ -828,7 +828,7 @@
 		text-transform: lowercase
 		font-family: $regular
 		margin-top: 15px
-		max-width: 150px
+		width: 150px
 		text-align: center
 		transition: 0.3s ease-out
 		&:hover
@@ -882,8 +882,39 @@
 		font-size: 24px
 		text-align: center
 		margin-top: 32px
-//==== Shopping Cart END ====//
 
+@media screen and(max-width: 1024px)
+	.s-shopping_cart
+		table
+			display: block
+			width: 100%
+			overflow-x: auto
+			-webkit-overflow-scrolling: touch
+		tbody
+			width: 100%
+			display: block
+		tr
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			td
+				width: 50%
+				max-width: none
+
+@media screen and(max-width: 480px)
+	.s-shopping_cart
+		table
+			tr
+				flex-direction: column
+			td
+				width: 100%
+				padding-top: 15px
+				padding-bottom: 15px
+		.product-thumbnail 
+			.magnify,
+			.ball
+				top: 15px
+//==== Shopping Cart END ====//
 
 //==== Footer START ====//
 .footer
