@@ -172,4 +172,19 @@ $(document).ready(function () {
 	/*===== Select picker =====*/
 	$('select').not('.multi_select').selectpicker();
 	$('.phone__custom').inputmask("8 (999) 999 99 99");
+
+
+	/*===== Cabinet tab =====*/
+	$('.active_sidebar a').on('click', function(e) {
+		e.preventDefault();
+		var attrHref = $(this).attr('href');
+		var section = $('.c-cabinet');
+		var th = $(this);
+		var link = $('.active_sidebar a');
+
+		link.removeClass('active_link');
+		th.addClass('active_link');
+		section.addClass('hidden');
+		$(attrHref).removeClass('hidden');
+	});
 });
