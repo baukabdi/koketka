@@ -9,7 +9,7 @@ $(document).ready(function () {
 		headerRight.removeClass('header_is_active');
 	});
 
-	$('.search_button').on('click', function () {
+	$('.search_button').on('click', function (e) {
 		var search = $('.header_search_wrap');
 
 

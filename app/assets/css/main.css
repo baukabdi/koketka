@@ -2270,7 +2270,7 @@ input[type="radio"]::before {
 }
 
 .s-checkout .right tbody {
-  border-bottom: 1px solid #828282;
+  border-bottom: 1px solid #BDBDBD;
 }
 
 .s-checkout .right tr:first-child td {
@@ -2335,6 +2335,28 @@ input[type="radio"]::before {
 
 .s-checkout .woocommerce-additional-fields {
   margin-top: 100px;
+}
+
+.s-checkout-confirmed .woocommerce-order-overview {
+  padding: 0;
+  list-style-type: none;
+}
+
+.s-checkout-confirmed .woocommerce-order-overview li:last-child {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.s-checkout-confirmed .shop_table {
+  margin-top: 30px;
+}
+
+.s-checkout-confirmed .shop_table .order-total {
+  border-top: 1px solid #BDBDBD;
+}
+
+.s-checkout-confirmed .woocommerce-checkout-payment {
+  margin-top: 0 !important;
 }
 
 @media screen and (max-width: 768px) {
