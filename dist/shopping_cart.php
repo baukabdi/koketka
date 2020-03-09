@@ -126,6 +126,7 @@
 										<p class="delivery_p">бул. „Чаталджа“ 19, 9002 Варна Център, <br> Варна, Болгария</p>
 										<a class="delivery_edit_address" href="#0" data-fancybox data-src="#address_edit_popup">Редактировать адрес доставки</a>
 
+										<!-- Popup Adress BEGIN -->
 										<div class="address_edit_popup" style="display: none;" id="address_edit_popup">
 											<div class="popup_row">
 												<div class="left">
@@ -133,9 +134,9 @@
 														<label class="required" for="select-country">Страна</label>
 														<select class="select_custom bootstrap-select" id="select-country">
 															<option>Россия</option>
-															<option>Россия</option>
-															<option>Россия</option>
-															<option>Россия</option>
+															<option>Беларусь</option>
+															<option>Болгария</option>
+															<option>Украина</option>
 														</select>
 													</div>
 
@@ -160,13 +161,14 @@
 														</div>
 														<div class="input_custom h-gutter">
 															<label for="phone" class="required">Телефон</label>
-															<input type="text" id="phone">
+															<input type="text" id="phone" class="phone__custom">
 														</div>
 													</div>
 												</div>
 											</div>
 											<a href="#0" class="button_custom">Добавить адрес</a>
 										</div>
+										<!-- Popup Address END -->
 									</td>
 
 									<td>
@@ -178,7 +180,7 @@
 										<label class="screen-reader-text">ИТОГО</label>
 										<span class="woocommerce-Price-amount amount">151.00 лв.</span>
 										<div class="wc-proceed-to-checkout">
-											<a href="#0" class="checkout-button button alt wc-forward button_custom">
+											<a href="checkout_page.php" class="checkout-button button alt wc-forward button_custom">
 												Оформить товар
 											</a>
 										</div>

@@ -1,15 +1,15 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 	var headerRight = $('.header_right');
-	$('.hamburger_button').on('click', function() {		
+	$('.hamburger_button').on('click', function () {
 		headerRight.addClass('header_is_active');
 	});
 
-	$('.times_button').on('click', function() {
+	$('.times_button').on('click', function () {
 		headerRight.removeClass('header_is_active');
 	});
 
-	$('.search_button').on('click', function() {
+	$('.search_button').on('click', function () {
 		var search = $('.header_search_wrap');
 
 
@@ -20,19 +20,23 @@ $(document).ready(function() {
 			search.slideUp('fast');
 		}
 	});
+	
 
-	$('.menu-item-has-children').on('click', function() {
-		var submenu = $(this).find('.sub-menu');
-		if (!submenu.is(':visible')) {
-			submenu.slideDown(500);
-		}
-		else {
-			submenu.slideUp(500);
-		}
-	});
+	if (window.matchMedia("(max-width: 992px)").matches) {
+		$('.menu-item-has-children').on('click', function () {
+			var submenu = $(this).find('.sub-menu');
+			if (!submenu.is(':visible')) {
+				submenu.slideDown(500);
+			}
+			else {
+				submenu.slideUp(500);
+			}
+		});
+	}
+
 
 	/*===== Submenu change image BEGIN =====*/
-	$('.sub_list a').hover(function() {
+	$('.sub_list a').hover(function () {
 		var path = $(this).data('path');
 		var right = $('.sub-menu .right img');
 		right.attr('src', path);
@@ -52,7 +56,7 @@ $(document).ready(function() {
 		touch: false,
 	});
 
-	$('.popup_close').on('click', function() {
+	$('.popup_close').on('click', function () {
 		$.fancybox.close();
 	});
 
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 	$(document).on('mouseover', '.fotorama__nav__frame', function () {
 		var $fotoramaDiv = $(this).parents('.fotorama'),
-		fotoramaApi = $fotoramaDiv.data('fotorama');
+			fotoramaApi = $fotoramaDiv.data('fotorama');
 		fotoramaApi.show({
 			index: $('.fotorama__nav__frame', $fotoramaDiv).index(this)
 		});
@@ -84,16 +88,16 @@ $(document).ready(function() {
 	var multiselectList = $('.multiselect-list');
 	var multiselectDiv = $('.multiselect-input-div input');
 
-	multiselectDiv.on('click', function (e){
+	multiselectDiv.on('click', function (e) {
 		var multiselectArrow = $(this).parent().find('.multiselect-dropdown-arrow');
 		if (multiselectList.is(':visible')) {
 			multiselectArrow.addClass('multiselect-arrow-active');
 		}
 
-		$(document).on('click', function(e) {
+		$(document).on('click', function (e) {
 			var multiselectArrow = $(this).parent().find('.multiselect-dropdown-arrow');
 
-			
+
 			if (!multiselectDiv.is(e.target) && multiselectDiv.is(e.target) == 0) {
 				var multiselectArrow = $('.multiselect-dropdown-arrow');
 				multiselectArrow.removeClass('multiselect-arrow-active');
@@ -103,16 +107,16 @@ $(document).ready(function() {
 	/*===== Multiselect init END =====*/
 
 
-	/*===== Quantity BEGIN =====*/ 
+	/*===== Quantity BEGIN =====*/
 	var numUp = $('.spin_up');
 	var numDown = $('.spin_down');
 
-	numUp.on('click', function(e) {
+	numUp.on('click', function (e) {
 		e.preventDefault();
 		this.parentNode.querySelector('input[type=number]').stepUp();
 	})
 
-	numDown.on('click', function(e) {
+	numDown.on('click', function (e) {
 		e.preventDefault();
 		this.parentNode.querySelector('input[type=number]').stepDown();
 	})
@@ -130,22 +134,22 @@ $(document).ready(function() {
 			autoplay: true,
 
 			responsive: [{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 2
-					},
-					breackpoint: 650,
-					settings: {
-						slidesToShow: 1
-					}
-				}]
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2
+				},
+				breackpoint: 650,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
 		});
 	}
 	/*===== Related Slider END =====*/
 
 	$(".price_range").asRange({
 		range: true,
-    limit: false,
+		limit: false,
 		min: 20,
 		max: 8000,
 		value: 50
@@ -153,10 +157,10 @@ $(document).ready(function() {
 
 
 	/*===== Filter toggle BEGIN =====*/
-	$('.filter_button').on('click', function(e) {
+	$('.filter_button').on('click', function (e) {
 		e.preventDefault();
 		var filterShow = $('.filter_show');
-		if(!filterShow.hasClass('filter_show_active')) {
+		if (!filterShow.hasClass('filter_show_active')) {
 			filterShow.addClass('filter_show_active');
 		}
 		else {
@@ -164,10 +168,10 @@ $(document).ready(function() {
 		}
 	});
 	/*===== Filter toggle END =====*/
-	
+
 
 
 	/*===== Select picker =====*/
 	$('select').not('.multi_select').selectpicker();
-
+	$('.phone__custom').inputmask("8 (999) 999 99 99");
 });
