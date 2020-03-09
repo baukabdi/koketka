@@ -382,7 +382,7 @@
 				align-items: center
 	.sidebar_image
 		background-color: rgba($dark, .5)
-		width: 44px
+		min-width: 44px
 		height: 44px
 		border-radius: 50%
 		display: flex
@@ -1178,6 +1178,72 @@
 		color: $blue
 //==== Cabinet END ====//
 
+
+//==== Orders BEGIN ====//
+.s-orders
+	padding-bottom: 130px
+	table
+		color: #000
+		font-family: $roboto
+		width: 100%
+		thead
+			border-bottom: 2px solid #000
+			font-weight: 900
+			th
+				&:last-child
+					text-align: right
+	tr
+		border-bottom: 1px solid #BDBDBD
+		td
+			padding: 25px 0
+			&:first-child
+				color: $blue
+			&:last-child
+				text-align: right
+	.woocommerce-button
+		font-family: $medium
+		font-size: 14px
+		color: $text
+		line-height: 18px
+		text-transform: lowercase
+		border: 1px solid #9A0038
+		box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25), 0px -1px 0px rgba(255, 255, 255, 0.4)
+		border-radius: 30px
+		padding: 10px 20px
+		text-decoration: none
+		transition: 0.3s ease-out
+		&:hover
+			background-color: $text
+			color: #fff
+			border-color: transparent
+
+.order_delayed
+	color: $red
+
+.order_sent
+	color: $green
+
+.waiting_payment
+	color: $blue
+
+
+/**** Orders Responsive ****/
+@media screen and(max-width: 768px)
+	.s-orders 
+		table
+			display: block
+			width: 100%
+			overflow-x: auto
+			-webkit-overflow-scrolling: touch
+			td
+				padding-right: 50px
+			tbody
+				tr
+					td
+						&:last-child
+							padding-right: 0
+
+//==== Orders END ====//
 
 //==== Footer BEGIN ====//
 .footer

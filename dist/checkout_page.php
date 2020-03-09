@@ -118,7 +118,7 @@
 												</div>
 
 												<p id="ship-to-new-address" class="ship-to-new-address">
-													<a href="#" class="add_new_address">
+													<a href="#0" data-src="#address_edit_popup" data-fancybox class="add_new_address">
 														<span class="circle_plus">
 															<img src="assets/images/plus.svg" alt="">
 														</span>
@@ -127,6 +127,50 @@
 														</span>
 													</a>
 												</p>
+
+												<!-- Popup Adress BEGIN -->
+												<div class="address_edit_popup" style="display: none;" id="address_edit_popup">
+													<div class="popup_row">
+														<div class="left">
+															<div class="country_wrap h-gutter">
+																<label class="required" for="select-country">Страна</label>
+																<select class="select_custom bootstrap-select" id="select-country">
+																	<option>Россия</option>
+																	<option>Беларусь</option>
+																	<option>Болгария</option>
+																	<option>Украина</option>
+																</select>
+															</div>
+
+															<div class="street_home">
+																<div class="input_custom h-gutter">
+																	<label for="street" class="required">Улица</label>
+																	<input type="text" id="street">
+																</div>
+																<div class="input_custom h-gutter">
+																	<label for="home" class="required">Дом</label>
+																	<input type="text" id="home">
+																</div>
+															</div>
+														</div>
+
+
+														<div class="right">
+															<div class="city_phone">
+																<div class="input_custom h-gutter">
+																	<label for="city" class="required">Город</label>
+																	<input type="text" id="city">
+																</div>
+																<div class="input_custom h-gutter">
+																	<label for="phone" class="required">Телефон</label>
+																	<input type="text" id="phone" class="phone__custom">
+																</div>
+															</div>
+														</div>
+													</div>
+													<a href="#0" class="button_custom">Добавить адрес</a>
+												</div>
+												<!-- Popup Address END -->
 										</div>
 									</div>
 

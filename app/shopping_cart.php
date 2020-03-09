@@ -166,7 +166,7 @@
 													</div>
 												</div>
 											</div>
-											<a href="#0" class="button_custom">Добавить адрес</a>
+											<a href="#0" class="button_custom">Изменить адрес</a>
 										</div>
 										<!-- Popup Address END -->
 									</td>
