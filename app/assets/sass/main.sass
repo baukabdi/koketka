@@ -636,6 +636,8 @@
 				font-size: 18px
 				margin-bottom: 5px
 				display: block
+			input
+				display: inline-block
 		.button_buy
 			max-width: $input-width
 			width: 100%
@@ -1097,6 +1099,50 @@
 
 //==== Checkout END ====//
 
+//==== Contacts BEGIN ====//
+.s-contacts
+	display: flex
+	justify-content: space-between
+	padding-bottom: 65px
+	h1
+		margin-top: 0
+	.contacts_left,
+	.contacts_right
+		width: 48%
+		font-family: $roboto
+	.contacts_left
+	.contacts_map
+		iframe
+			width: 100%
+	
+	.contacts_items
+		margin-top: 22px
+		font-size: 18px
+		font-family: $roboto
+		p
+			margin-bottom: 0
+			text-transform: uppercase
+	.contacts_right
+		input,
+		textarea
+			margin-bottom: 21px
+		button
+			color: #fff
+			text-transform: uppercase
+			font-size: 24px
+			font-family: $medium
+			border: none
+			padding: 10px 35px
+
+/**** Contacts Responsive ****/
+@media screen and(max-width: 992px)
+	.s-contacts
+		flex-direction: column
+		.contacts_left,
+		.contacts_right
+			width: 100%
+
+//==== Contacts END ====//
 
 
 //==== Footer BEGIN ====//

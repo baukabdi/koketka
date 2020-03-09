@@ -62,6 +62,6 @@
 				</div>
 				<!-- Submenu END -->
 		</div>
-		<div class="menu-item"><a href="#0">Контакти</a></div>
+		<div class="menu-item"><a href="contacts.php">Контакти</a></div>
 	</div>
 </nav>

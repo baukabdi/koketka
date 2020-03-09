@@ -1759,6 +1759,10 @@ input[type="radio"]::before {
   display: block;
 }
 
+.s-product_single .select_wrap .select_item input {
+  display: inline-block;
+}
+
 .s-product_single .select_wrap .button_buy {
   max-width: 150px;
   width: 100%;
@@ -2376,6 +2380,62 @@ input[type="radio"]::before {
   }
   .s-checkout .woocommerce-additional-fields {
     margin-top: 50px;
+  }
+}
+
+.s-contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 65px;
+}
+
+.s-contacts h1 {
+  margin-top: 0;
+}
+
+.s-contacts .contacts_left,
+.s-contacts .contacts_right {
+  width: 48%;
+  font-family: "Roboto-Regular";
+}
+
+.s-contacts .contacts_map iframe {
+  width: 100%;
+}
+
+.s-contacts .contacts_items {
+  margin-top: 22px;
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+}
+
+.s-contacts .contacts_items p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.s-contacts .contacts_right input,
+.s-contacts .contacts_right textarea {
+  margin-bottom: 21px;
+}
+
+.s-contacts .contacts_right button {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Stem-Medium";
+  border: none;
+  padding: 10px 35px;
+}
+
+/**** Contacts Responsive ****/
+@media screen and (max-width: 992px) {
+  .s-contacts {
+    flex-direction: column;
+  }
+  .s-contacts .contacts_left,
+  .s-contacts .contacts_right {
+    width: 100%;
   }
 }
 
