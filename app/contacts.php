@@ -27,7 +27,7 @@
 					<div class="contacts_left">
 						<h1>Как нас найти</h1>
 						<div class="contacts_map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.812370288339!2d23.32442001546662!3d42.686516679166346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa850beec29ac9%3A0xb3a0d02a11b2087a!2z0YPQuy4g4oCe0JvRjtCx0LXQvSDQmtCw0YDQsNCy0LXQu9C-0LLigJwgNDgsIDExNDIg0KbQtdC90YLRitGALCDQodC-0YTQuNGPLCDQkdC-0LvQs9Cw0YDQuNGP!5e0!3m2!1sru!2skz!4v1583746130648!5m2!1sru!2skz" width="600" height="373" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.812370288339!2d23.32442001546662!3d42.686516679166346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa850beec29ac9%3A0xb3a0d02a11b2087a!2z0YPQuy4g4oCe0JvRjtCx0LXQvSDQmtCw0YDQsNCy0LXQu9C-0LLigJwgNDgsIDExNDIg0KbQtdC90YLRitGALCDQodC-0YTQuNGPLCDQkdC-0LvQs9Cw0YDQuNGP!5e0!3m2!1sru!2skz!4v1583746130648!5m2!1sru!2skz" width="600" height="373" style="border:0;"></iframe>
 						</div>
 
 						<div class="contacts_items">

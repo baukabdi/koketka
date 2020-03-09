@@ -12,7 +12,6 @@ $(document).ready(function () {
 	$('.search_button').on('click', function (e) {
 		var search = $('.header_search_wrap');
 
-
 		if (!search.is(':visible')) {
 			search.slideDown('fast');
 		}
@@ -33,7 +32,6 @@ $(document).ready(function () {
 			}
 		});
 	}
-
 
 	/*===== Submenu change image BEGIN =====*/
 	$('.sub_list a').hover(function () {

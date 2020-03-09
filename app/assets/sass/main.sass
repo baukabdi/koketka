@@ -372,6 +372,30 @@
 					right: 0
 					border-radius: 0 10px 10px 0
 
+
+.active_sidebar
+	padding: 100px 0
+	ul
+		li
+			a
+				display: flex
+				align-items: center
+	.sidebar_image
+		background-color: rgba($dark, .5)
+		width: 44px
+		height: 44px
+		border-radius: 50%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-right: 10px
+		img
+			width: 20px
+	.active_link
+		.sidebar_image
+			background-color: $dark
+
 /**** Menu Responsive ****/
 @media screen and(max-width: 992px)
 	.menu_wrap 
@@ -1143,6 +1167,16 @@
 			width: 100%
 
 //==== Contacts END ====//
+
+
+
+//==== Cabinet BEGIN ====//
+.s-cabinet
+	color: #000
+	font-size: 18px
+	a
+		color: $blue
+//==== Cabinet END ====//
 
 
 //==== Footer BEGIN ====//
