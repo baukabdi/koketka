@@ -916,7 +916,175 @@
 				top: 15px
 //==== Shopping Cart END ====//
 
-//==== Footer START ====//
+
+//==== Checkout BEGIN ====//
+.s-checkout
+	color: #000
+	padding-bottom: 150px
+	.left,
+	.center
+		width: 48%
+	.left_center
+		width: 67%
+		.form-row
+			justify-content: space-between
+	h3
+		font-size: 24px
+		color: #000
+		font-family: $medium
+		margin-bottom: 45px
+	.not_our_client
+		font-family: $roboto
+		font-weight: 700
+		color: #000
+		font-size: 18px
+		a
+			color: $blue
+			display: block
+			font-weight: 400
+			margin-bottom: 30px
+	.checkout_row
+		display: flex
+		justify-content: space-between
+		font-family: $roboto
+		font-size: 18px
+	.showcoupon
+		display: block
+		font-weight: 700
+		border: 1px solid $border
+		padding: 13px
+		border-radius: 5px
+		color: #000
+		text-decoration: none
+	.h-gutter
+		margin-bottom: 30px
+	
+	.street_home
+		display: flex
+		justify-content: space-between
+		>
+			div
+				width: 46%
+	
+	label
+		display: block
+	
+	.woocommerce-form__label-for-checkbox
+		display: flex
+		align-items: center
+		user-select: none
+		span
+			width: 100%
+		input
+			width: auto
+			width: 22px
+			height: 22px
+			&::after
+				top: -3px
+	
+	.add_new_address
+		color: $blue
+		display: flex
+		align-items: center
+		line-height: 25px
+		font-size: 18px
+		font-family: $roboto
+		.circle_plus
+			margin-right: 12px
+		img
+			width: 38px
+			height: 38px
+			background-color: $blue
+			border-radius: 50%
+	
+	.order_title
+		font-size: 18px
+		font-family: $roboto
+		font-weight: 900
+		text-transform: capitalize
+		color: #000
+	.right
+		width: 28%
+		table
+			width: 100%
+			a
+				color: $blue
+				margin-bottom: 10px
+				display: inline-block
+		thead
+			border-bottom: 2px solid #000
+			th
+				padding-bottom: 28px
+		tbody
+			border-bottom: 1px solid $gray
+		tr
+			&:first-child
+				td
+					padding-top: 15px
+			th,
+			td
+				&:last-child
+					text-align: right
+			th,
+			td
+				padding-bottom: 15px
+		.order-total
+			th
+				font-size: 20px
+				text-transform: uppercase
+				font-family: $roboto
+				font-weight: 500
+			td
+				font-weight: 900
+	
+	.woocommerce-checkout-payment
+		margin-top: 45px
+		ul
+			list-style-type: none
+			padding: 0
+			li
+				display: flex
+				align-items: center
+				margin-bottom: 20px
+				label
+					width: 100%
+					margin-bottom: 0
+				input
+					margin-right: 15px
+		.button
+			color: #fff
+			text-transform: uppercase
+			font-size: 24px
+			font-family: $medium
+			text-align: center
+			border: none
+			padding: 10px 20px
+			margin-top: 30px
+
+	.woocommerce-additional-fields
+		margin-top: 100px
+
+
+@media screen and(max-width: 768px)
+	.s-checkout 
+		.checkout_row
+			flex-direction: column
+		.left_center
+			width: 100%
+			.form-row
+				flex-direction: column
+		.left,
+		.center,
+		.right
+			width: 100%
+		.woocommerce-additional-fields
+			margin-top: 50px
+
+//==== Checkout END ====//
+
+
+
+//==== Footer BEGIN ====//
 .footer
 	background-color: $footer
 	color: #fff
