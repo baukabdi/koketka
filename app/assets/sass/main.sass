@@ -68,7 +68,7 @@
 			margin-right: -5px
 		input
 			width: 100%
-	
+
 	.header_right
 		display: flex
 		align-items: center
@@ -188,8 +188,8 @@
 		.header_social
 			a
 				font-size: 40px
-		.header_phone 
-			.p_item 
+		.header_phone
+			.p_item
 				p
 					white-space: normal
 		.cart_button
@@ -217,7 +217,7 @@
 			z-index: 1
 			margin: 0
 			display: none
-			
+
 			input
 				box-sizing: border-box
 				padding: 10px
@@ -225,7 +225,7 @@
 				margin: 0
 
 @media screen and(max-width: 400px)
-	.header 
+	.header
 		.header_right
 			width: 80%
 //==== Header END ====//
@@ -295,7 +295,7 @@
 				position: relative
 				text-decoration: none
 				background-color: rgba($accent, .2)
-				&:hover					
+				&:hover
 					color: #fff
 					background-color: $accent
 					&::before
@@ -313,7 +313,7 @@
 					content: "\f0d7"
 					font: normal normal normal 14px/1 FontAwesome
 					margin-left: 10px
-		
+
 
 		.sub-menu
 			display: flex
@@ -398,7 +398,7 @@
 
 /**** Menu Responsive ****/
 @media screen and(max-width: 992px)
-	.menu_wrap 
+	.menu_wrap
 		.menu_list_wrap
 			flex-direction: column
 			align-items: flex-start !important
@@ -548,7 +548,7 @@
 			&:hover
 				&::after
 					transition: 0.8s ease
-					left: 120%			
+					left: 120%
 			&::after
 				content: ''
 				display: block
@@ -579,20 +579,20 @@
 
 /* Header Responsive */
 @media screen and (max-width: 1300px)
-	.s-products 
-		.products_row 
+	.s-products
+		.products_row
 			li
 				width: 49%
 
 @media screen and (max-width: 768px)
-	.s-products 
-		.products_row 
+	.s-products
+		.products_row
 			li
 				width: 100%
 
 @media screen and (max-width: 480px)
-	.s-products 
-		.products_row 
+	.s-products
+		.products_row
 			.bottom
 				flex-direction: column
 //==== Products cart END ====//
@@ -605,7 +605,7 @@
 
 		margin-right: 22px
 		position: relative
-	.product_single_fotorama 
+	.product_single_fotorama
 		.fotorama__img
 			height: 100% !important
 			top: 0 !important
@@ -730,7 +730,7 @@
 
 
 @media screen and(max-width: 420px)
-	.s-product_single 
+	.s-product_single
 		.select_wrap
 			flex-direction: column
 			align-items: flex-start
@@ -740,7 +740,7 @@
 				max-width: none
 			.in_stock
 				position: static
-	.nav-tabs 
+	.nav-tabs
 		.nav-item
 			border: 1px solid $border
 			width: 100%
@@ -838,7 +838,7 @@
 		max-width: 157px
 	.screen-reader-text
 		font-size: 24px
-	.woocommerce-Price-amount 
+	.woocommerce-Price-amount
 		font-size: 22px
 		font-family: $bold
 		display: block
@@ -936,7 +936,7 @@
 				width: 100%
 				padding-top: 15px
 				padding-bottom: 15px
-		.product-thumbnail 
+		.product-thumbnail
 			.magnify,
 			.ball
 				top: 15px
@@ -984,17 +984,17 @@
 		text-decoration: none
 	.h-gutter
 		margin-bottom: 30px
-	
+
 	.street_home
 		display: flex
 		justify-content: space-between
 		>
 			div
 				width: 46%
-	
+
 	label
 		display: block
-	
+
 	.woocommerce-form__label-for-checkbox
 		display: flex
 		align-items: center
@@ -1007,7 +1007,7 @@
 			height: 22px
 			&::after
 				top: -3px
-	
+
 	.add_new_address
 		color: $blue
 		display: flex
@@ -1022,7 +1022,7 @@
 			height: 38px
 			background-color: $blue
 			border-radius: 50%
-	
+
 	.order_title
 		font-size: 18px
 		font-family: $roboto
@@ -1062,7 +1062,7 @@
 				font-weight: 500
 			td
 				font-weight: 900
-	
+
 	.woocommerce-checkout-payment
 		margin-top: 45px
 		ul
@@ -1107,7 +1107,7 @@
 
 
 @media screen and(max-width: 768px)
-	.s-checkout 
+	.s-checkout
 		.checkout_row
 			flex-direction: column
 		.left_center
@@ -1138,7 +1138,7 @@
 	.contacts_map
 		iframe
 			width: 100%
-	
+
 	.contacts_items
 		margin-top: 22px
 		font-size: 18px
@@ -1229,7 +1229,7 @@
 
 /**** Orders Responsive ****/
 @media screen and(max-width: 768px)
-	.s-orders 
+	.s-orders
 		table
 			display: block
 			width: 100%
@@ -1244,6 +1244,43 @@
 							padding-right: 0
 
 //==== Orders END ====//
+
+
+//==== Addresses BEGIN ====//
+.s-addresses
+	font-family: $roboto
+	font-size: 18px
+	color: #000
+	padding-bottom: 150px
+	h3
+		font-family: $medium
+		font-size: 24px
+	.col-1
+		padding: 0
+	.u-columns
+		display: flex
+		width: 100%
+		>
+			.woocommerce-Address
+				width: 48%
+				max-width: none
+				flex: none
+	.edit
+		color: $blue
+		margin-top: 30px
+		display: block
+
+@media screen and(max-width: 768px)
+	.s-addresses
+		.u-columns
+			flex-direction: column
+			>
+				.woocommerce-Address
+					width: 100%
+					margin-bottom: 25px
+					padding: 0
+//==== Addresses END ====//
+
 
 //==== Footer BEGIN ====//
 .footer

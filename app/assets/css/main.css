@@ -2560,6 +2560,50 @@ input[type="radio"]::before {
   }
 }
 
+.s-addresses {
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  color: #000;
+  padding-bottom: 150px;
+}
+
+.s-addresses h3 {
+  font-family: "Stem-Medium";
+  font-size: 24px;
+}
+
+.s-addresses .col-1 {
+  padding: 0;
+}
+
+.s-addresses .u-columns {
+  display: flex;
+  width: 100%;
+}
+
+.s-addresses .u-columns > .woocommerce-Address {
+  width: 48%;
+  max-width: none;
+  flex: none;
+}
+
+.s-addresses .edit {
+  color: #2D9CDB;
+  margin-top: 30px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .s-addresses .u-columns {
+    flex-direction: column;
+  }
+  .s-addresses .u-columns > .woocommerce-Address {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+}
+
 .footer {
   background-color: #C4848F;
   color: #fff;
