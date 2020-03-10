@@ -44,10 +44,10 @@
 					<div class="right">
 						<h1 class="product_title entry-title">НАГРЪДНИКЪ ПТАУН В</h1>
 						<p class="price">49.00 лв</p>
-
-						<div class="select_wrap">
-							<div class="select_item">
-								<label for="size">Размер</label>
+						<form>
+							<div class="select_wrap">
+								<div class="select_item">
+									<label for="size">Размер</label>
 									<select id="size" class="select_custom bootstrap-select">
 										<option value=''>None</option>
 										<option value=''>XS</option>
@@ -61,34 +61,35 @@
 										<option value=''>3XL</option>
 										<option value=''>5XL</option>
 									</select>
-							</div>
-
-							<div class="select_item">
-								<label for="color">Цвет</label>
-								<select id="color" class="select_custom bootstrap-select">
-									<option value=''>None</option>
-									<option value=''>Красный</option>
-									<option value=''>Черный</option>
-									<option value=''>Голубой</option>
-									<option value=''>Зелёный</option>
-								</select>
-							</div>
-
-							<div class="quantity">
-								<label class="screen-reader-text" for="quantity_5e6727cf4139c">Количество</label>
-								<div class="quantity_item">
-									<span class="spin_down">-</span>
-									<input id="quantity_5e6727cf4139c" class="input-text qty text" type="number" value="1" min="0" max="20">
-									<span class="spin_up">+</span>
 								</div>
 
-								<div class="in_stock">
-									14 в наличии
+								<div class="select_item">
+									<label for="color">Цвет</label>
+									<select id="color" class="select_custom bootstrap-select">
+										<option value=''>None</option>
+										<option value=''>Красный</option>
+										<option value=''>Черный</option>
+										<option value=''>Голубой</option>
+										<option value=''>Зелёный</option>
+									</select>
 								</div>
-							</div>
 
-							<button class="button_custom single_add_to_cart_button button alt">Купить</button>
-						</div>
+								<div class="quantity">
+									<label class="screen-reader-text" for="quantity_5e6727cf4139c">Количество</label>
+									<div class="quantity_item">
+										<span class="spin_down">-</span>
+										<input id="quantity_5e6727cf4139c" class="input-text qty text" type="number" value="1" min="0" max="20">
+										<span class="spin_up">+</span>
+									</div>
+
+									<div class="in_stock">
+										14 в наличии
+									</div>
+								</div>
+
+								<button class="button_custom single_add_to_cart_button button alt">Купить</button>
+							</div>
+						</form>
 
 						<ul class="nav nav-tabs tabs wc-tabs" role="tablist">
 							<li class="nav-item">
