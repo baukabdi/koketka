@@ -129,7 +129,7 @@ gulp.task('build', done => {
 	])
 		.pipe(gulp.dest('dist/assets/css'));
 
-	var build cssImages = gulp.src([
+	var cssImages = gulp.src([
 				'app/assets/css/*.png',
 				'app/assets/css/*.jpg',
 		])
