@@ -125,12 +125,15 @@
 		max-width: 130px
 		width: 100%
 		margin-right: 35px
-		img
-			margin-right: 10px
+		a
+			text-decoration: none
+			&:hover
+				.cart_quantity
+					color: #fff
 		.cart_quantity
 			position: absolute
 			top: 0
-			right: 0
+			right: 14px
 			@include button($button)
 			border-radius: 50%
 			width: 22px
@@ -618,9 +621,19 @@
 .s-product_single
 	display: flex
 	.left
-
 		margin-right: 22px
 		position: relative
+	.dropdown-menu
+		transform: none !important
+		min-width: auto !important
+		top: 100% !important
+		width: 100% !important
+	
+	.filter-option-inner-inner
+		color: #000
+		font-family: $roboto
+		font-weight: 900
+
 	.product_single_fotorama
 		.fotorama__img
 			height: 100% !important

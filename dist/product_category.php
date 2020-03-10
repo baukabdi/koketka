@@ -37,6 +37,7 @@
 										<option value=''>5XL</option>
 									</select>
 								</div>
+					
 
 								<div class="select_item select_manufacturer">
 									<label for="manufacturer">Производитель</label>

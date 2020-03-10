@@ -95,7 +95,7 @@
 
  				<div class="checkbox_custom">
  					<input type="checkbox" id="privacy_politic">
- 					<label for="privacy_politic">Вие прочетохте нашата политика за лични данни.</label>
+ 					<label for="privacy_politic">Вие прочетохте <a href="#">нашата политика</a> за лични данни.</label>
  				</div>
 
  				<button>Зарегистрироваться</button>
@@ -162,8 +162,8 @@
 							<a href="shopping_cart.php">
 								<img src="assets/images/shopping-cart.svg" alt="Koketka">
 								<span>Корзина</span>
+								<span class="cart_quantity">1</span>
 							</a>
-							<span class="cart_quantity">1</span>
 						</div>
 
 
