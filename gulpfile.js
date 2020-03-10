@@ -129,6 +129,12 @@ gulp.task('build', done => {
 	])
 		.pipe(gulp.dest('dist/assets/css'));
 
+	var build cssImages = gulp.src([
+				'app/assets/css/*.png',
+				'app/assets/css/*.jpg',
+		])
+	.pipe(gulp.dest('dist/assets/css'));
+
 	var cssFonts = gulp.src('app/assets/css/fonts/**/*')
 			.pipe(gulp.dest('dist/assets/css/fonts'));
 
