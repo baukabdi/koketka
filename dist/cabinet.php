@@ -302,20 +302,20 @@
 
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 									<label for="city" class="required">Город</label>
-									<input type="text" id="city" value="Варна">
+									<input type="text" id="city1" value="Варна">
 								</p>
 
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide i-block">
 									<label for="street" class="required">Улица</label>
 									<span class="woocommerce-input-wrapper">
-										<input type="text" id="street" value="Гоголя">
+										<input type="text" id="street1" value="Гоголя">
 									</span>
 								</p>
 
 								<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide i-block">
 									<label for="home" class="required">Дом</label>
 									<span class="woocommerce-input-wrapper">
-										<input type="text" id="home" value="90">
+										<input type="text" id="home1" value="90">
 									</span>
 								</p>
 
