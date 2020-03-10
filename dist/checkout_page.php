@@ -39,9 +39,7 @@
 												<h3>Адрес за фактуриране</h3>
 												<div class="woocommerce-billing-fields__field-wrapper">
 													<p class="validate-required checkout_fullname h-gutter" id="billing_first_name_field">
-														<label for="billing_full_name" class="required">
-															ФИО
-														</label>
+														<label for="billing_full_name" class="required">ФИО</label>
 														<span class="woocommerce-input-wrapper">
 															<input type="text" class="input-text" id="billing_full_name">
 														</span>

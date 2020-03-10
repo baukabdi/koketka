@@ -29,7 +29,7 @@
 
 
 				<section class="s-product_single">
-					<div class="left">
+					<div class="left woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images">
 						<div class="product_single_fotorama fotorama" data-nav="thumbs">
 							<img data-test="123" src="assets/images/fotorama-1.png" alt="Koketka">
 							<img data-test="123" src="assets/images/fotorama-2.png" alt="Koketka">
@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="right">
-						<h1 class="product_title">НАГРЪДНИКЪ ПТАУН В</h1>
+						<h1 class="product_title entry-title">НАГРЪДНИКЪ ПТАУН В</h1>
 						<p class="price">49.00 лв</p>
 
 						<div class="select_wrap">
@@ -75,10 +75,10 @@
 							</div>
 
 							<div class="quantity">
-								<label for="quantity">Количество</label>
+								<label class="screen-reader-text" for="quantity_5e6727cf4139c">Количество</label>
 								<div class="quantity_item">
 									<span class="spin_down">-</span>
-									<input id="quantity" type="number" value="1" min="0" max="20">
+									<input id="quantity_5e6727cf4139c" class="input-text qty text" type="number" value="1" min="0" max="20">
 									<span class="spin_up">+</span>
 								</div>
 
@@ -87,10 +87,10 @@
 								</div>
 							</div>
 
-							<a href="#0" class="button_custom button_buy">Купить</a>
+							<button class="button_custom single_add_to_cart_button button alt">Купить</button>
 						</div>
 
-						<ul class="nav nav-tabs" role="tablist">
+						<ul class="nav nav-tabs tabs wc-tabs" role="tablist">
 							<li class="nav-item">
 								<a class="nav-link active" id="description-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Описание</a>
 							</li>
@@ -118,9 +118,9 @@
 
 				<section class="s-products related_products">
 					<h2>Свързани продукти</h2>
-					<ul class="products_row related_products_slider">
+					<ul class="products_row products columns-4 related_products_slider">
 
-						<li class="products_item">
+						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -134,7 +134,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -148,7 +148,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -162,7 +162,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">

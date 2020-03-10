@@ -66,7 +66,7 @@
 
 				<section class="s-products">
 					<ul class="products_row">
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
 								<h2 class="woocommerce-loop-product__title">Дрехи</h2>
@@ -75,12 +75,12 @@
 									<del class="woocommerce-Price-amount">51.00 лв.</del>
 								</span>
 							</a>
-							<a href="#0" class="button product_type_simple">
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
 								Подробнее
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<div class="favourite">
 									<img src="assets/images/favourite.png" alt="">
@@ -92,12 +92,12 @@
 									<del class="woocommerce-Price-amount">51.00 лв.</del>
 								</span>
 							</a>
-							<a href="#0" class="button product_type_simple">
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
 								Подробнее
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<div class="favourite">
 									<img src="assets/images/favourite.png" alt="">
@@ -109,12 +109,12 @@
 									<del class="woocommerce-Price-amount">51.00 лв.</del>
 								</span>
 							</a>
-							<a href="#0" class="button product_type_simple">
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
 								Подробнее
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<div class="favourite">
 									<img src="assets/images/favourite.png" alt="">
@@ -126,12 +126,12 @@
 									<del class="woocommerce-Price-amount">51.00 лв.</del>
 								</span>
 							</a>
-							<a href="#0" class="button product_type_simple">
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
 								Подробнее
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<div class="favourite">
 									<img src="assets/images/favourite.png" alt="">
@@ -143,12 +143,12 @@
 									<del class="woocommerce-Price-amount">51.00 лв.</del>
 								</span>
 							</a>
-							<a href="#0" class="button product_type_simple">
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
 								Подробнее
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<div class="favourite">
 									<img src="assets/images/favourite.png" alt="">
@@ -160,7 +160,7 @@
 									<del class="woocommerce-Price-amount">51.00 лв.</del>
 								</span>
 							</a>
-							<a href="#0" class="button product_type_simple">
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
 								Подробнее
 							</a>
 						</li>

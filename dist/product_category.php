@@ -58,8 +58,8 @@
 							</div>
 						</div>
 					</div>
-					<ul class="products_row">
-						<li class="products_item">
+					<ul class="products_row products columns-4">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -73,7 +73,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -87,7 +87,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -101,7 +101,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -115,7 +115,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -129,7 +129,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -144,7 +144,7 @@
 						</li>
 
 						
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -158,7 +158,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
@@ -172,7 +172,7 @@
 							</a>
 						</li>
 
-						<li class="products_item">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
 									<img src="assets/images/favourite.png" alt="Koketka">
