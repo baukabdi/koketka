@@ -718,6 +718,39 @@ input[type="radio"]
 			&:first-child
 				margin-right: 28px
 
+
+
+
+.pagination
+	display: flex
+	justify-content: center
+	margin-bottom: 25px
+	.page-numbers
+		background-color: #fff
+		border: 1px solid $accent
+		border-radius: 5px
+		display: inline-block
+		min-width: 35px
+		height: 35px
+		text-align: center
+		line-height: 35px
+		text-decoration: none
+		color: #000
+		transition: 0.3s ease-out
+		&:hover
+			background-color: $accent
+			color: #fff
+		&:nth-last-child(n+2)
+			margin-right: 15px
+	.current
+		background-image: $gradient
+		color: #fff
+		border-color: transparent
+
+
+
+
+
 @media screen and(max-width: 768px)
 	.address_edit_popup 
 		.popup_row

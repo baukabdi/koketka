@@ -186,6 +186,20 @@
 							</a>
 						</li>
 					</ul>
+
+					<nav class="navigation pagination" role="navigation">  
+						<div class="nav-links">
+							<a class="prev page-numbers" href="#0">←</a>
+
+							<span class='page-numbers current'>1</span> 
+							<a class='page-numbers' href='#'>2</a> 
+							<a class='page-numbers' href='#'>3</a> 
+							<a class='page-numbers' href='#'>4</a> 
+							<a class='page-numbers' href='#'>5</a>
+
+							<a class="next page-numbers" href="#0">→</a>
+						</div> 
+					</nav> 
 				</section>
 
 			</div>
