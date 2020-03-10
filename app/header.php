@@ -19,7 +19,6 @@
  	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/fotorama.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/multiselect.css">
- 	<link rel="stylesheet" type="text/css" href="assets/css/wrunner-default-theme.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/asRange.min.css">
 	
 	<!--- Кастомные стили / Оставить -->
