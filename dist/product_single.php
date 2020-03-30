@@ -49,17 +49,17 @@
 								<div class="select_item">
 									<label for="size">Размер</label>
 									<select id="size" multiple="multiple">
-										<option value="">None</option>
-										<option value="">XS</option>
-										<option value="">S</option>
-										<option value="">SM</option>
-										<option value="">M</option>
-										<option value="">ML</option>
-										<option value="">L</option>
-										<option value="">XL</option>
-										<option value="">2XL</option>
-										<option value="">3XL</option>
-										<option value="">5XL</option>
+										<option value="None">None</option>
+										<option value="XS">XS</option>
+										<option value="S">S</option>
+										<option value="SM">SM</option>
+										<option value="M">M</option>
+										<option value="ML">ML</option>
+										<option value="L">L</option>
+										<option value="XL">XL</option>
+										<option value="2XL">2XL</option>
+										<option value="3XL">3XL</option>
+										<option value="5XL">5XL</option>
 									</select>
 								</div>
 
@@ -67,10 +67,10 @@
 									<label for="color">Цвет</label>
 									<select id="color" multiple="multiple">
 										<option value="">None</option>
-										<option value="">Красный</option>
-										<option value="">Черный</option>
-										<option value="">Голубой</option>
-										<option value="">Зелёный</option>
+										<option value="Красный">Красный</option>
+										<option value="Черный">Черный</option>
+										<option value="Голубой">Голубой</option>
+										<option value="Зелёный">Зелёный</option>
 									</select>
 								</div>
 
