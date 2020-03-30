@@ -121,17 +121,6 @@ $(document).ready(function () {
 		});
 	}
 	/*===== Related Slider END =====*/
-
-	// $(".price_range").asRange({
-	// 	range: true,
-	// 	limit: false,
-	// 	min: 20,
-	// 	max: 8000,
-	// 	value: 50
-	// });
-
-//	$('.price_range input').jRange('setValue', '10,20');
-	//$('.price_range input').jRange('updateRange', '0,100', '25,50');
 	$('.price_range input').jRange({
 	    from: 1500,
 	    to: 10000,

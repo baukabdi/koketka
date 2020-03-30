@@ -16,7 +16,7 @@ gulp.task('serve', function () {
 
 	browserSync({
 		proxy: 'koketka',
-		//server: { baseDir: 'app' },		
+		//server: { baseDir: 'app' },
 		notify: false,
 		open: true,
 		tunnel: false,
@@ -57,7 +57,7 @@ var scriptsPath = [
 		'app/assets/js/jquery.fancybox.min.js',
 		'app/assets/js/fotorama.js',
 		'app/assets/js/bootstrap-multiselect.js',
-		'app/assets/js/jquery-asRange.min.js',
+		'app/assets/js/jquery.range-min.js',
 		'app/assets/js/script.js',
 ];
 
