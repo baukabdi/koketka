@@ -14202,117 +14202,87 @@ body.compensate-for-scrollbar {
   display: none;
 }
 
-.multiselect-wrapper {
-  width: 180px;
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 12px;
-  font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-}
-
-.multiselect-wrapper .multiselect-input {
-  width: 120px;
-  padding-right: 50px;
-}
-
-.multiselect-wrapper label {
-  display: block;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.multiselect-wrapper .multiselect-list {
-  z-index: 1;
-  position: absolute;
-  display: none;
-  background-color: white;
-  border: 1px solid grey;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  margin-top: -2px;
-}
-
-.multiselect-wrapper .multiselect-list.active {
-  display: block;
-}
-
-.multiselect-wrapper .multiselect-list > span {
-  font-weight: bold;
-}
-
-.multiselect-wrapper .multiselect-list .multiselect-checkbox {
-  margin-right: 2px;
-}
-
-.multiselect-wrapper .multiselect-list > span,
-.multiselect-wrapper .multiselect-list li {
-  cursor: default;
-}
-
-.multiselect-wrapper .multiselect-list {
-  padding: 5px;
-  min-width: 200px;
-}
-
-.multiselect-wrapper ul {
-  list-style: none;
-  display: block;
+span.multiselect-native-select {
   position: relative;
-  padding: 0px;
-  margin: 0px;
-  max-height: 200px;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
-.multiselect-wrapper ul li {
-  padding-right: 20px;
-  display: block;
+span.multiselect-native-select select {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px -1px -1px -3px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  left: 50%;
+  top: 30px;
 }
 
-.multiselect-wrapper ul li.active {
-  background-color: #0066ff;
-  color: white;
-}
-
-.multiselect-wrapper ul li:hover {
-  background-color: #0066ff;
-  color: white;
-}
-
-.multiselect-input-div {
-  height: 34px;
-}
-
-.multiselect-input-div input {
-  border: 1px solid #ababab;
-  background: #fff;
-  margin: 5px 0 6px 0;
-  padding: 5px;
-  vertical-align: middle;
-}
-
-.multiselect-count {
-  position: relative;
-  text-align: center;
-  border-radius: 2px;
-  behavior: url(/Content/Pie/pie.htc);
-  background-color: lightblue;
-  display: inline-block !important;
-  padding: 2px 7px;
-  left: -45px;
-}
-
-.multiselect-dropdown-arrow {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid black;
+.multiselect-container {
   position: absolute;
-  line-height: 20px;
-  text-align: center;
-  display: inline-block !important;
-  margin-top: 17px;
-  margin-left: -42px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.multiselect-container .input-group {
+  margin: 5px;
+}
+
+.multiselect-container .multiselect-reset .input-group {
+  width: 93%;
+}
+
+.multiselect-container > li {
+  padding: 0;
+}
+
+.multiselect-container > li > a.multiselect-all label {
+  font-weight: 700;
+}
+
+.multiselect-container > li.multiselect-group label {
+  margin: 0;
+  padding: 3px 20px;
+  height: 100%;
+  font-weight: 700;
+}
+
+.multiselect-container > li.multiselect-group-clickable label {
+  cursor: pointer;
+}
+
+.multiselect-container > li > a {
+  padding: 0;
+}
+
+.multiselect-container > li > a > label {
+  margin: 0;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 3px 20px 3px 40px;
+}
+
+.multiselect-container > li > a > label.checkbox, .multiselect-container > li > a > label.radio {
+  margin: 0;
+}
+
+.multiselect-container > li > a > label > input[type=checkbox] {
+  margin-bottom: 5px;
+}
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+  padding: 3px 20px 3px 40px;
+}
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+  margin-left: -20px;
+  margin-right: 0;
 }

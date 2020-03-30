@@ -56,7 +56,7 @@ var scriptsPath = [
 		'app/assets/js/slick.min.js',
 		'app/assets/js/jquery.fancybox.min.js',
 		'app/assets/js/fotorama.js',
-		'app/assets/js/multiselect.min.js',
+		'app/assets/js/bootstrap-multiselect.js',
 		'app/assets/js/jquery-asRange.min.js',
 		'app/assets/js/script.js',
 ];
@@ -123,7 +123,7 @@ gulp.task('build', done => {
 		'app/assets/css/slick.css',
 		'app/assets/css/jquery.fancybox.min.css',
 		'app/assets/css/fotorama.css',
-		'app/assets/css/multiselect.css',
+		'app/assets/css/bootstrap-multiselect.css',
 		'app/assets/css/asRange.min.css',
 		'app/assets/css/main.css',
 	])
