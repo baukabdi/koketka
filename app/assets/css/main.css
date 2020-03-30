@@ -1368,7 +1368,7 @@ input[type="radio"]::before {
   transition: 0.3s ease-out;
 }
 
-.menu_wrap .menu_list_wrap .current_page_item a {
+.menu_wrap .menu_list_wrap .current_page_item > a {
   padding: 12px 20px;
   border-radius: 30px;
   transition: 0.3s ease-out;
@@ -1377,12 +1377,12 @@ input[type="radio"]::before {
   background-color: rgba(255, 150, 169, 0.2);
 }
 
-.menu_wrap .menu_list_wrap .current_page_item a:hover {
+.menu_wrap .menu_list_wrap .current_page_item > a:hover {
   color: #fff;
   background-color: #FF96A9;
 }
 
-.menu_wrap .menu_list_wrap .current_page_item a:hover::before {
+.menu_wrap .menu_list_wrap .current_page_item > a:hover::before {
   display: none;
 }
 
