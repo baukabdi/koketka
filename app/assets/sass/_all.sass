@@ -147,7 +147,7 @@ textarea
 .fancybox-content
 	padding: 0
 
-.fancybox-slide--html 
+.fancybox-slide--html
 	.fancybox-close-small
 		background: none
 		display: none
@@ -275,7 +275,7 @@ textarea
 			line-height: 1.4
 
 @media screen and(max-width: 410px)
-	.form_custom 
+	.form_custom
 		.checkbox_wrap
 			flex-direction: column
 			align-items: center
@@ -570,7 +570,7 @@ input[type="radio"]
 
 	.filter_show
 		width: 90%
-		display: none
+		
 		.select_wrap
 			display: flex
 			align-items: center
@@ -653,7 +653,7 @@ input[type="radio"]
 	button
 		width: 100%
 		outline: none !important
-	> 
+	>
 		.dropdown-toggle
 			background-color: #fff
 			border: 1px solid $border
@@ -671,7 +671,7 @@ input[type="radio"]
 		.dropdown-toggle_active
 			&::after
 				border-radius: 50%
-.bootstrap-select 
+.bootstrap-select
 	.dropdown-menu
 		padding: 0
 		li
@@ -756,8 +756,29 @@ input[type="radio"]
 
 
 
+.multiselect-container
+	>
+		li
+			>
+				a
+					>
+						label
+							padding: 14px
+	label
+		display: flex
+		align-items: center
+	input
+		display: inline-block
+		margin-bottom: 0 !important
+
+.multiselect
+	background-color: #fff
+	border: 1px solid #E0E0E0
+	outline: none !important
+
+
 @media screen and(max-width: 768px)
-	.address_edit_popup 
+	.address_edit_popup
 		.popup_row
 			flex-direction: column
 		.left,

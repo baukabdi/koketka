@@ -159,7 +159,7 @@ $(document).ready(function () {
 
 
 	/*===== Select picker =====*/
-	$('select').not('.multi_select').selectpicker();
+	$('select').not('[multiple="multiple"]').selectpicker();
 	$('.phone__custom').inputmask("8 (999) 999 99 99");
 
 
@@ -176,4 +176,10 @@ $(document).ready(function () {
 		section.addClass('hidden');
 		$(attrHref).removeClass('hidden');
 	});
+
+
+	$('[multiple="multiple"]').multiselect({
+		includeSelectAllOption: true,
+	});
+
 });

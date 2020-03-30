@@ -691,7 +691,6 @@ input[type="radio"]::before {
 
 .products_filter .filter_show {
   width: 90%;
-  display: none;
 }
 
 .products_filter .filter_show .select_wrap {
@@ -943,6 +942,26 @@ input[type="radio"]::before {
   background-image: linear-gradient(180deg, #F3568F 0%, #B90144 100%);
   color: #fff;
   border-color: transparent;
+}
+
+.multiselect-container > li > a > label {
+  padding: 14px;
+}
+
+.multiselect-container label {
+  display: flex;
+  align-items: center;
+}
+
+.multiselect-container input {
+  display: inline-block;
+  margin-bottom: 0 !important;
+}
+
+.multiselect {
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  outline: none !important;
 }
 
 @media screen and (max-width: 768px) {
