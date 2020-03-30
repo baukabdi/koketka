@@ -48,29 +48,29 @@
 							<div class="select_wrap">
 								<div class="select_item">
 									<label for="size">Размер</label>
-									<select id="size" class="select_custom bootstrap-select">
-										<option value=''>None</option>
-										<option value=''>XS</option>
-										<option value=''>S</option>
-										<option value=''>SM</option>
-										<option value=''>M</option>
-										<option value=''>ML</option>
-										<option value=''>L</option>
-										<option value=''>XL</option>
-										<option value=''>2XL</option>
-										<option value=''>3XL</option>
-										<option value=''>5XL</option>
+									<select id="size" multiple="multiple">
+										<option value="">None</option>
+										<option value="">XS</option>
+										<option value="">S</option>
+										<option value="">SM</option>
+										<option value="">M</option>
+										<option value="">ML</option>
+										<option value="">L</option>
+										<option value="">XL</option>
+										<option value="">2XL</option>
+										<option value="">3XL</option>
+										<option value="">5XL</option>
 									</select>
 								</div>
 
 								<div class="select_item">
 									<label for="color">Цвет</label>
-									<select id="color" class="select_custom bootstrap-select">
-										<option value=''>None</option>
-										<option value=''>Красный</option>
-										<option value=''>Черный</option>
-										<option value=''>Голубой</option>
-										<option value=''>Зелёный</option>
+									<select id="color" multiple="multiple">
+										<option value="">None</option>
+										<option value="">Красный</option>
+										<option value="">Черный</option>
+										<option value="">Голубой</option>
+										<option value="">Зелёный</option>
 									</select>
 								</div>
 

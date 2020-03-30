@@ -287,7 +287,7 @@
 										<a href="checkout_confirmed_page.php" class="button alt button_custom">оформить заказ</a>
 
 										<!-- Рабочая кнопка / откомментировать
-											<button type="submit" class="button alt button_custom" name="woocommerce_checkout_place_order" id="place_order" value="Поръчване" data-value="Поръчване">оформить заказ</button> 
+											<button type="submit" class="button alt button_custom" name="woocommerce_checkout_place_order" id="place_order" value="Поръчване" data-value="Поръчване">оформить заказ</button>
 										-->
 									</div>
 								</div>

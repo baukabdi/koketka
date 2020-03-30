@@ -68,7 +68,7 @@ header end -->
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
 <script src="assets/js/fotorama.js"></script>
-<script src="assets/js/multiselect.min.js"></script>
+<script src="assets/js/bootstrap-multiselect.js"></script>
 <script src="assets/js/jquery-asRange.min.js"></script>
 <!--- Кастомные скрипты / Оставить
 ======================================= -->

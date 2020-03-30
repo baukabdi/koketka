@@ -81,29 +81,6 @@ $(document).ready(function () {
 	});
 	/*===== Fotorama for product single Options END =====*/
 
-	/*===== Multiselect init BEGIN =====*/
-	$('.multi_select').multiselect();
-	var multiselectList = $('.multiselect-list');
-	var multiselectDiv = $('.multiselect-input-div input');
-
-	multiselectDiv.on('click', function (e) {
-		var multiselectArrow = $(this).parent().find('.multiselect-dropdown-arrow');
-		if (multiselectList.is(':visible')) {
-			multiselectArrow.addClass('multiselect-arrow-active');
-		}
-
-		$(document).on('click', function (e) {
-			var multiselectArrow = $(this).parent().find('.multiselect-dropdown-arrow');
-
-
-			if (!multiselectDiv.is(e.target) && multiselectDiv.is(e.target) == 0) {
-				var multiselectArrow = $('.multiselect-dropdown-arrow');
-				multiselectArrow.removeClass('multiselect-arrow-active');
-			}
-		});
-	});
-	/*===== Multiselect init END =====*/
-
 
 	/*===== Quantity BEGIN =====*/
 	var numUp = $('.spin_up');

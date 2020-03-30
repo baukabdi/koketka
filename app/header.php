@@ -18,7 +18,7 @@
  	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/fotorama.css">
- 	<link rel="stylesheet" type="text/css" href="assets/css/multiselect.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/asRange.min.css">
 	
 	<!--- Кастомные стили / Оставить -->
@@ -26,9 +26,7 @@
  </head>
 
  <body>
-
- 	<!-- Popup BEGIN -->
-
+ 	
  		<!-- Callback -->
  		<form id="callback_form" class="form_custom" style="display: none;">
  			<div class="form_item">

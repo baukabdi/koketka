@@ -23,7 +23,7 @@
 							<div class="select_wrap">
 								<div class="select_item select_size">
 									<label for="size">Размер</label>
-									<select id="size" class="multi_select" multiple>
+									<select id="size" multiple="multiple">
 										<option value=''>None</option>
 										<option value=''>XS</option>
 										<option value=''>S</option>
@@ -41,12 +41,12 @@
 
 								<div class="select_item select_manufacturer">
 									<label for="manufacturer">Производитель</label>
-									<select id="manufacturer" class="multi_select" multiple>
-										<option value=''>Doggy Dolly</option>
-										<option value=''>H&M</option>
-										<option value=''>LC Waikiki</option>
-										<option value=''>Adidas</option>
-										<option value=''>Nike</option>
+									<select id="manufacturer" multiple="multiple">
+										<option value="Doggy Dolly">Doggy Dolly</option>
+										<option value="H&M">H&M</option>
+										<option value="LC Waikiki">LC Waikiki</option>
+										<option value="Adidas">Adidas</option>
+										<option value="Nike">Nike</option>
 									</select>
 								</div>
 
