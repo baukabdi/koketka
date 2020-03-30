@@ -9,7 +9,7 @@
 
 	<!--- Сжатые и объединенные библиотеки CSS / Включить после сборки
  	<link rel="stylesheet" href="assets/css/libs.min.css"> -->
-	
+
 	<!--- Библиотеки CSS / Удалить после сборки -->
  	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
@@ -20,13 +20,14 @@
  	<link rel="stylesheet" type="text/css" href="assets/css/fotorama.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-multiselect.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/asRange.min.css">
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.range.css">
+
 	<!--- Кастомные стили / Оставить -->
  	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
  </head>
 
  <body>
- 	
+
  		<!-- Callback -->
  		<form id="callback_form" class="form_custom" style="display: none;">
  			<div class="form_item">
@@ -60,7 +61,7 @@
 
  				<label class="required" for="password">Пароль</label>
  				<input type="text" id="password">
-				
+
 				<div class="checkbox_wrap">
 					<div class="checkbox_custom">
 						<input type="checkbox" id="remember_me">
@@ -82,7 +83,7 @@
  			</div>
  		</form>
 
-		
+
 		<!-- Sign Up -->
  		<form id="sign_up" class="form_custom form_sign_up" style="display: none;">
  			<div class="form_item">
@@ -185,13 +186,13 @@
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</div>
 
-					
+
 					<div class="hamburger_button">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</div>
 				</div>
 
-				
+
 			</div>
 		</header>
  	<!-- Header END -->

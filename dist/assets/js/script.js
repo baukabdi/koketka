@@ -19,7 +19,7 @@ $(document).ready(function () {
 			search.slideUp('fast');
 		}
 	});
-	
+
 
 	if (window.matchMedia("(max-width: 992px)").matches) {
 		$('.menu-item-has-children').on('click', function () {
@@ -122,14 +122,26 @@ $(document).ready(function () {
 	}
 	/*===== Related Slider END =====*/
 
-	$(".price_range").asRange({
-		range: true,
-		limit: false,
-		min: 20,
-		max: 8000,
-		value: 50
-	});
+	// $(".price_range").asRange({
+	// 	range: true,
+	// 	limit: false,
+	// 	min: 20,
+	// 	max: 8000,
+	// 	value: 50
+	// });
 
+//	$('.price_range input').jRange('setValue', '10,20');
+	//$('.price_range input').jRange('updateRange', '0,100', '25,50');
+	$('.price_range input').jRange({
+	    from: 1500,
+	    to: 10000,
+	    step: 1,
+	    isRange : true,
+	    format: '%s',
+	    width: 300,
+	    showLabels: true,
+	    snap: true
+	});
 
 	/*===== Filter toggle BEGIN =====*/
 	$('.filter_button').on('click', function (e) {

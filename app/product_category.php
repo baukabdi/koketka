@@ -37,7 +37,7 @@
 										<option value=''>5XL</option>
 									</select>
 								</div>
-					
+
 
 								<div class="select_item select_manufacturer">
 									<label for="manufacturer">Производитель</label>
@@ -53,7 +53,7 @@
 								<div class="price_item">
 									<label>Цена</label>
 									<div class="price_range">
-										<!-- Range Script -->
+										<input type="hidden" class="slider-input" value="23">
 									</div>
 								</div>
 							</div>
@@ -144,7 +144,7 @@
 							</a>
 						</li>
 
-						
+
 						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php">
 								<span class="favourite onsale">
@@ -188,19 +188,19 @@
 						</li>
 					</ul>
 
-					<nav class="navigation pagination" role="navigation">  
+					<nav class="navigation pagination" role="navigation">
 						<div class="nav-links">
 							<a class="prev page-numbers" href="#0">←</a>
 
-							<span class='page-numbers current'>1</span> 
-							<a class='page-numbers' href='#'>2</a> 
-							<a class='page-numbers' href='#'>3</a> 
-							<a class='page-numbers' href='#'>4</a> 
+							<span class='page-numbers current'>1</span>
+							<a class='page-numbers' href='#'>2</a>
+							<a class='page-numbers' href='#'>3</a>
+							<a class='page-numbers' href='#'>4</a>
 							<a class='page-numbers' href='#'>5</a>
 
 							<a class="next page-numbers" href="#0">→</a>
-						</div> 
-					</nav> 
+						</div>
+					</nav>
 				</section>
 
 			</div>

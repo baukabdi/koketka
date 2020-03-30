@@ -51,7 +51,7 @@
  						</div>
  					</div>
  				</footer>
-			<!--— Footer END -->  
+			<!--— Footer END -->
 
 <!--- Сжатые и объединенные библиотеки JS / Включить после сборки
 <script src="assets/js/libs.min.js"></script>
@@ -70,6 +70,7 @@ header end -->
 <script src="assets/js/fotorama.js"></script>
 <script src="assets/js/bootstrap-multiselect.js"></script>
 <script src="assets/js/jquery-asRange.min.js"></script>
+<script src="assets/js/jquery.range-min.js"></script>
 <!--- Кастомные скрипты / Оставить
 ======================================= -->
 <script src="assets/js/script.js"></script>
