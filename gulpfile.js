@@ -124,7 +124,7 @@ gulp.task('build', done => {
 		'app/assets/css/jquery.fancybox.min.css',
 		'app/assets/css/fotorama.css',
 		'app/assets/css/bootstrap-multiselect.css',
-		'app/assets/css/asRange.min.css',
+		'app/assets/css/jquery.range.css',
 		'app/assets/css/main.css',
 	])
 		.pipe(gulp.dest('dist/assets/css'));
