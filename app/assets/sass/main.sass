@@ -629,7 +629,7 @@
 		min-width: auto !important
 		top: 100% !important
 		width: 100% !important
-	
+
 	.filter-option-inner-inner
 		color: #000
 		font-family: $roboto
@@ -685,8 +685,9 @@
 		.select_item
 			max-width: $input-width
 			width: 100%
-			margin-right: 35px
 			margin-bottom: 22px
+			&:nth-child(n+2)
+				margin-left: 85px
 			label
 				font-size: 18px
 				margin-bottom: 5px
@@ -766,8 +767,11 @@
 		.select_wrap
 			flex-direction: column
 			align-items: flex-start
+			width: 100%
 			.select_item
 				max-width: none
+				margin-left: 0 !important
+
 			.quantity
 				max-width: none
 			.in_stock
@@ -1350,12 +1354,12 @@
 	fieldset
 		margin-top: 45px
 		display: flex
-		.woocommerce-form-row 
+		.woocommerce-form-row
 			margin-right: 30px
 
 //**** Profile Details Responsive ****//
 @media screen and (max-width: 992px)
-	.s-profile-details 
+	.s-profile-details
 		.woocommerce-EditAccountForm
 			flex-direction: column
 			.left
