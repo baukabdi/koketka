@@ -717,10 +717,6 @@ input[type="radio"]::before {
   width: 25% !important;
 }
 
-.products_filter .filter_show .select_manufacturer {
-  width: 38% !important;
-}
-
 .products_filter .filter_show .multiselect-wrapper {
   color: #000;
 }

@@ -127,7 +127,7 @@ $(document).ready(function () {
 	    step: 1,
 	    isRange : true,
 	    format: '%s',
-	    width: 300,
+	    width: 250,
 	    showLabels: true,
 	    snap: true
 	});
