@@ -171,4 +171,20 @@ $(document).ready(function () {
 		includeSelectAllOption: true,
 	});
 
+	var wh = $(window).height();
+	var bh = $('body').height();
+	console.log(wh);
+
+	if (bh < wh) {
+		$('.footer').addClass('footer_absolute');
+	}
+	$('body').on('click', function() {
+		if (bh < wh) {
+			$('.footer').addClass('footer_absolute');
+		}
+		else {
+			$('.footer').removeClass('footer_absolute');
+		}
+	});
+
 });
