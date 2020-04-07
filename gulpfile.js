@@ -172,4 +172,4 @@ gulp.task('fa-min', function () {
 		.pipe(cssnano())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('fa'));
-})
+});

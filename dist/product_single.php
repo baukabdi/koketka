@@ -48,7 +48,7 @@
 							<div class="select_wrap">
 								<div class="select_item">
 									<label for="size">Размер</label>
-									<select id="size" multiple="multiple">
+									<select id="size">
 										<option value="None">None</option>
 										<option value="XS">XS</option>
 										<option value="S">S</option>
@@ -65,7 +65,7 @@
 
 								<div class="select_item">
 									<label for="color">Цвет</label>
-									<select id="color" multiple="multiple">
+									<select id="color">
 										<option value="">None</option>
 										<option value="Красный">Красный</option>
 										<option value="Черный">Черный</option>

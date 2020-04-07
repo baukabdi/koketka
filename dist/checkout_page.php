@@ -82,10 +82,20 @@
 											<p class="country_wrap h-gutter">
 												<label class="required" for="billing_country">Страна</label>
 												<select class="select_custom bootstrap-select" id="billing_country">
-													<option>Россия</option>
-													<option>Беларусь</option>
-													<option>Болгария</option>
-													<option>Украина</option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													<option>9</option>
+													<option>10</option>
+													<option>11</option>
+													<option>12</option>
+													<option>13</option>
+
 												</select>
 											</p>
 
