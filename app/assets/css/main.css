@@ -2936,4 +2936,5 @@ input[type="radio"]::before {
 .footer_absolute {
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
