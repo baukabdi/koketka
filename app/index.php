@@ -65,6 +65,7 @@
 				</section>
 
 				<section class="s-products">
+					<!-- Products new START -->
 					<ul class="products_row">
 						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php" class="product-type_top">
@@ -180,6 +181,63 @@
 							</div>
 						</li>
 					</ul>
+					<!-- Products new END -->
+					
+					<!-- Products old BEGIN -->
+					<ul class="products_row products_row_old">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-6.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+								<h2 class="woocommerce-loop-product__title">Обувки и чорапи</h2>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+								Подробнее
+							</a>
+						</li>
+
+							<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-6.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+								<h2 class="woocommerce-loop-product__title">Обувки и чорапи</h2>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+								Подробнее
+							</a>
+						</li>
+
+							<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-6.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+								<h2 class="woocommerce-loop-product__title">Обувки и чорапи</h2>
+								<span class="currency price">
+									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+									<del class="woocommerce-Price-amount">51.00 лв.</del>
+								</span>
+							</a>
+							<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+								Подробнее
+							</a>
+						</li>
+					</ul>
+					<!-- Products old END -->
+
 				</section>
 			</div>
 		</div>

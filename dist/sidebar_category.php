@@ -3,7 +3,7 @@
 		<h3 class="min_title sidebar_title">Категории продукти</h3>
 		<ul>
 			<li><a href="product_category.php">Дрехи</a></li>
-			<li>
+			<li class="sidebar_category_active">
 				<a href="product_category.php">
 					<span class="uppercase">Разпродажба</span>
 					<span class="quantity">38</span>
