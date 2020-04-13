@@ -83,6 +83,12 @@
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
+
+								<div class="right">
+									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+										Подробнее
+									</a>
+								</div>
 							</div>
 						</li>
 
@@ -101,6 +107,12 @@
 										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
+								</div>
+
+								<div class="right">
+									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+										Подробнее
+									</a>
 								</div>
 							</div>
 						</li>
@@ -121,6 +133,12 @@
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
+
+								<div class="right">
+									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+										Подробнее
+									</a>
+								</div>
 							</div>
 						</li>
 
@@ -139,6 +157,12 @@
 										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
+								</div>
+
+								<div class="right">
+									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+										Подробнее
+									</a>
 								</div>
 							</div>
 						</li>
@@ -159,6 +183,12 @@
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
+
+								<div class="right">
+									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+										Подробнее
+									</a>
+								</div>
 							</div>
 						</li>
 
@@ -177,6 +207,12 @@
 										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
+								</div>
+
+								<div class="right">
+									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart">
+										Подробнее
+									</a>
 								</div>
 							</div>
 						</li>
