@@ -3,7 +3,12 @@
 		<h3 class="min_title sidebar_title">Категории продукти</h3>
 		<ul>
 			<li><a href="product_category.php">Дрехи</a></li>
-			<li><a href="product_category.php"><span class="uppercase">Разпродажба</span></a></li>
+			<li>
+				<a href="product_category.php">
+					<span class="uppercase">Разпродажба</span>
+					<span class="quantity">38</span>
+				</a>
+			</li>
 			<li><a href="product_category.php">Козметика <span class="uppercase">Pure Paws</span></a></li>
 			<li><a href="product_category.php">Легла</a></li>
 			<li><a href="product_category.php">Чанти</a></li>
