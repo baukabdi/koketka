@@ -542,14 +542,16 @@ input[type="radio"]
 
 
 .currency
-	position: absolute
-	top: 25px
-	left: 25px
+	display: flex
+	align-items: flex-end
 	del
 		font-size: 14px
 		color: $accent
 		display: block
 		text-align: left
+	.woocommerce-Price-currencySymbol
+		margin-right: 10px
+		line-height: 1
 
 
 .products_filter

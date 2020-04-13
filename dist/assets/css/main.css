@@ -654,9 +654,8 @@ input[type="radio"]::before {
 }
 
 .currency {
-  position: absolute;
-  top: 25px;
-  left: 25px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .currency del {
@@ -664,6 +663,11 @@ input[type="radio"]::before {
   color: #FF96A9;
   display: block;
   text-align: left;
+}
+
+.currency .woocommerce-Price-currencySymbol {
+  margin-right: 10px;
+  line-height: 1;
 }
 
 .products_filter {
@@ -1381,6 +1385,21 @@ input[type="radio"]::before {
   .header .header_right {
     width: 80%;
   }
+  .s-products .products_row li .product-type_bottom {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .s-products .products_row li .product-type_bottom .right {
+    width: 100%;
+  }
+  .s-products .products_row li .product-type_bottom .right a {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s-products .products_row .currency {
+    margin-bottom: 15px;
+  }
 }
 
 .sidebar_left {
@@ -1737,6 +1756,7 @@ input[type="radio"]::before {
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
+  height: 100%;
 }
 
 .s-products .products_row li a {
@@ -1744,13 +1764,24 @@ input[type="radio"]::before {
   display: block;
 }
 
-.s-products .products_row img {
-  height: 100%;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.s-products .products_row li .product-type_top {
+  height: 248px;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-products .products_row li .product-type_top img {
+  width: 100%;
+}
+
+.s-products .products_row li .product-type_bottom {
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px 25px;
 }
 
 .s-products .products_row a {
@@ -1758,21 +1789,11 @@ input[type="radio"]::before {
   position: relative;
 }
 
-.s-products .products_row a:first-child {
-  height: 300px;
-}
-
 .s-products .products_row .woocommerce-loop-product__title {
   color: #67432B;
   font-size: 20px;
   font-family: "Stem-Regular";
   text-align: left;
-  padding-left: 25px;
-  padding-bottom: 25px;
-  position: absolute;
-  width: 64%;
-  bottom: 0;
-  left: 0;
 }
 
 .s-products .products_row .product_type_simple {
@@ -1786,9 +1807,6 @@ input[type="radio"]::before {
   border-radius: 30px;
   outline: none;
   font-family: "Stem-Regular";
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
   overflow: hidden;
   display: block;
   color: #fff;
@@ -2914,7 +2932,7 @@ input[type="radio"]::before {
 }
 
 .footer ul li {
-  display: inline-block;
+  display: block;
 }
 
 .footer .footer_menu a {

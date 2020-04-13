@@ -230,6 +230,20 @@
 	.header
 		.header_right
 			width: 80%
+	.s-products 
+		.products_row 
+			li 
+				.product-type_bottom
+					flex-direction: column
+					align-items: center !important
+					.right
+						width: 100%
+						a
+							width: 80%
+							margin-left: auto
+							margin-right: auto
+			.currency
+				margin-bottom: 15px
 //==== Header END ====//
 
 
@@ -522,32 +536,32 @@
 			margin-bottom: 20px
 			overflow: hidden
 			text-align: center
+			height: 100%
 			a
 				text-decoration: none
 				display: block
-		img
-			height: 100%
-			margin: 0 auto
-			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-50%, -50%)
+			.product-type_top
+				height: 248px
+				position: relative
+				overflow: hidden
+				img
+					width: 100%
+			.product-type_bottom
+				background-color: #fff
+				border: 1px solid #C4C4C4
+				border-radius: 0 0 $bd-radius $bd-radius
+				display: flex
+				justify-content: space-between
+				align-items: flex-end
+				padding: 15px 25px
 		a
 			display: inline-block
 			position: relative
-			&:first-child
-				height: 300px
 		.woocommerce-loop-product__title
 			color: $text
 			font-size: 20px
 			font-family: $regular
 			text-align: left
-			padding-left: 25px
-			padding-bottom: 25px
-			position: absolute
-			width: 64%
-			bottom: 0
-			left: 0
 		.product_type_simple
 			text-align: right
 			text-decoration: none
@@ -557,9 +571,6 @@
 			border-radius: 30px
 			outline: none
 			font-family: $regular
-			position: absolute
-			bottom: 25px
-			right: 25px
 			overflow: hidden
 			display: block
 			color: #fff
@@ -1417,7 +1428,7 @@
 		padding: 0
 		list-style-type: none
 		li
-			display: inline-block
+			display: block
 	.footer_menu
 		a
 			margin-bottom: 15px
