@@ -2951,6 +2951,10 @@ input[type="radio"]::before {
   margin-right: 10px;
 }
 
+.footer .social_custom li {
+  display: inline-block;
+}
+
 .footer_absolute {
   position: absolute;
   bottom: 0;

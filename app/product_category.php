@@ -60,7 +60,7 @@
 						</div>
 					</div>
 
-				<ul class="products_row">
+					<ul class="products_row">
 						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 							<a href="product_single.php" class="product-type_top">
 								<div class="favourite">
@@ -71,9 +71,9 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Дрехи</h2>
+									<a href="#" class="woocommerce-loop-product__title">Дрехи</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
@@ -90,9 +90,9 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Тениска Рибка</h2>
+									<a href="#" class="woocommerce-loop-product__title">Тениска Рибка</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
@@ -109,9 +109,9 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Козметика PURE PAWS</h2>
+									<a href="#" class="woocommerce-loop-product__title">Козметика PURE PAWS</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
@@ -128,9 +128,9 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Легла</h2>
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
@@ -147,9 +147,9 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Легла</h2>
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>
@@ -166,9 +166,9 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Легла</h2>
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
 								</div>

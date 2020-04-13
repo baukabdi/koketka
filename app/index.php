@@ -76,17 +76,11 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Дрехи</h2>
+									<a href="#" class="woocommerce-loop-product__title">Дрехи</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
-								</div>
-								
-								<div class="right">
-									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
-										Подробнее
-									</a>
 								</div>
 							</div>
 						</li>
@@ -101,17 +95,11 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">РАЗПРОДАЖБА</h2>
+									<a href="#" class="woocommerce-loop-product__title">Тениска Рибка</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
-								</div>
-								
-								<div class="right">
-									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
-										Подробнее
-									</a>
 								</div>
 							</div>
 						</li>
@@ -126,17 +114,11 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Козметика PURE PAWS</h2>
+									<a href="#" class="woocommerce-loop-product__title">Козметика PURE PAWS</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
-								</div>
-								
-								<div class="right">
-									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
-										Подробнее
-									</a>
 								</div>
 							</div>
 						</li>
@@ -151,42 +133,30 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Легла</h2>
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
-								</div>
-								
-								<div class="right">
-									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
-										Подробнее
-									</a>
 								</div>
 							</div>
 						</li>
 
 						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
-							<div class="favourite">
-								<img src="assets/images/favourite.png" alt="">
-							</div>
 							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-5.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
 							</a>
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Легла</h2>
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
-								</div>
-								
-								<div class="right">
-									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
-										Подробнее
-									</a>
 								</div>
 							</div>
 						</li>
@@ -201,17 +171,11 @@
 
 							<div class="product-type_bottom">
 								<div class="left">
-									<h2 class="woocommerce-loop-product__title">Легла</h2>
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
 									<span class="currency price">
-										<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
 										<del class="woocommerce-Price-amount">51.00 лв.</del>
 									</span>
-								</div>
-								
-								<div class="right">
-									<a href="#0" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_to_cart_button ajax_add_to_cart">
-										Подробнее
-									</a>
 								</div>
 							</div>
 						</li>
