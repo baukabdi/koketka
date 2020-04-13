@@ -120,61 +120,118 @@
 				<section class="s-products related_products">
 					<h2>Свързани продукти</h2>
 					<ul class="products_row products columns-4 related_products_slider">
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+							</a>
 
-						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-							<a href="product_single.php">
-								<span class="favourite onsale">
-									<img src="assets/images/favourite.png" alt="Koketka">
-								</span>
+							<div class="product-type_bottom">
+								<div class="left">
+									<a href="#" class="woocommerce-loop-product__title">Дрехи</a>
+									<span class="currency price">
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
+										<del class="woocommerce-Price-amount">51.00 лв.</del>
+									</span>
+								</div>
+							</div>
+						</li>
+
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-2.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
+							</a>
+
+							<div class="product-type_bottom">
+								<div class="left">
+									<a href="#" class="woocommerce-loop-product__title">Тениска Рибка</a>
+									<span class="currency price">
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
+										<del class="woocommerce-Price-amount">51.00 лв.</del>
+									</span>
+								</div>
+							</div>
+						</li>
+
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-3.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-								<h2 class="woocommerce-loop-product__title">КОПРИНЕН КРЕМ БАЛСАМ</h2>
-								<span class="currency price">
-									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
-									<del class="woocommerce-Price-amount">51.00 лв.</del>
-								</span>
 							</a>
+
+							<div class="product-type_bottom">
+								<div class="left">
+									<a href="#" class="woocommerce-loop-product__title">Козметика PURE PAWS</a>
+									<span class="currency price">
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
+										<del class="woocommerce-Price-amount">51.00 лв.</del>
+									</span>
+								</div>
+							</div>
 						</li>
 
-						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-							<a href="product_single.php">
-								<span class="favourite onsale">
-									<img src="assets/images/favourite.png" alt="Koketka">
-								</span>
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
 								<img src="assets/images/product-4.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-								<h2 class="woocommerce-loop-product__title">ПАКЕТ ЗА ОБЕМ 2</h2>
-								<span class="currency price">
-									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
-									<del class="woocommerce-Price-amount">51.00 лв.</del>
-								</span>
 							</a>
+
+							<div class="product-type_bottom">
+								<div class="left">
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
+									<span class="currency price">
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
+										<del class="woocommerce-Price-amount">51.00 лв.</del>
+									</span>
+								</div>
+							</div>
 						</li>
 
-						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-							<a href="product_single.php">
-								<span class="favourite onsale">
-									<img src="assets/images/favourite.png" alt="Koketka">
-								</span>
-								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-								<h2 class="woocommerce-loop-product__title">ПАКЕТ ЗА ОБЕМ 2</h2>
-								<span class="currency price">
-									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
-									<del class="woocommerce-Price-amount">51.00 лв.</del>
-								</span>
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-5.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
 							</a>
+
+							<div class="product-type_bottom">
+								<div class="left">
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
+									<span class="currency price">
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
+										<del class="woocommerce-Price-amount">51.00 лв.</del>
+									</span>
+								</div>
+							</div>
 						</li>
 
-						<li class="products_item product type-product post-24 status-publish first instock product_cat-clothing product_cat-t-shirts has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-							<a href="product_single.php">
-								<span class="favourite onsale">
-									<img src="assets/images/favourite.png" alt="Koketka">
-								</span>
-								<img src="assets/images/product-1.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
-								<h2 class="woocommerce-loop-product__title">ПАКЕТ ЗА ОБЕМ 2</h2>
-								<span class="currency price">
-									<span class="woocommerce-Price-currencySymbol">51.00 лв.</span>
-									<del class="woocommerce-Price-amount">51.00 лв.</del>
-								</span>
+						<li class="products_item product type-product status-publish first instock product_cat-posters has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+							<a href="product_single.php" class="product-type_top">
+								<div class="favourite">
+									<img src="assets/images/favourite.png" alt="">
+								</div>
+								<img src="assets/images/product-6.png" class="woocommerce-placeholder wp-post-image" alt="Koketka">
 							</a>
+
+							<div class="product-type_bottom">
+								<div class="left">
+									<a href="#" class="woocommerce-loop-product__title">Легла</a>
+									<span class="currency price">
+										<a href="#" class="woocommerce-Price-currencySymbol">51.00 лв.</a>
+										<del class="woocommerce-Price-amount">51.00 лв.</del>
+									</span>
+								</div>
+							</div>
 						</li>
 
 					</ul>
