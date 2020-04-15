@@ -1786,6 +1786,7 @@ input[type="radio"]::before {
   overflow: hidden;
   text-align: center;
   height: 100%;
+  border: 1px solid #C4C4C4;
 }
 
 .s-products .products_row li a {
@@ -1805,7 +1806,7 @@ input[type="radio"]::before {
 
 .s-products .products_row li .product-type_bottom {
   background-color: #fff;
-  border: 1px solid #C4C4C4;
+  border-top: 1px solid #C4C4C4;
   border-radius: 0 0 20px 20px;
   display: flex;
   justify-content: space-between;
