@@ -1876,8 +1876,8 @@ input[type="radio"]::before {
 
 .s-products .products_row .favourite {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
 }
 
 .s-products .products_row .favourite img {
